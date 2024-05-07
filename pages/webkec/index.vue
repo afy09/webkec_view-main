@@ -74,7 +74,7 @@
             <h5 style="font-style: italic">PEMERINTAH KOTA BOGOR</h5>
             <h2 style="margin-top: 25px">KECAMATAN</h2>
             <h1 style="font-weight: bold; font-size: 50px">
-              BOGOR <span style="color: #47b2e4">UTARA</span>
+              BOGOR <span style="color: #3575cc">UTARA</span>
             </h1>
             <button class="btn-hero" type="submit">Baca Selengkapnya</button>
           </div>
@@ -84,13 +84,13 @@
     <!-- HEAD SECTION END -->
 
     <!-- SAMBUTAN CAMAT -->
-    <div class="cam" style="margin: 120px 10px 50px 10px">
+    <div class="cam" style="margin: 120px 10px 100px 10px">
       <h2 class="text-center">
-        SAMBUTAN <span style="color: #47b2e4">CAMAT</span>
+        SAMBUTAN <span style="color: #3575cc">CAMAT</span>
       </h2>
       <div class="d-flex justify-content-center" style="margin-top: 50px">
         <div class="cam-img" style="margin-right: 30px">
-          <img />
+          <img src="~/assets/img/camatbogut12.png" alt="camatbogut.jpg" />
           <div class="nama-cam" style="text-align: center">
             <h5>Camat Kec. Bogor Utara</h5>
             <p>Riki Robiansah, S.STP</p>
@@ -115,7 +115,7 @@
 
     <!-- BERITA  -->
     <div class="kat-ber" style="text-align: center; padding: 15px">
-      <h2><span style="color: #47b2e4">KATEGORI </span>BERITA</h2>
+      <h2><span style="color: #3575cc">KATEGORI </span>BERITA</h2>
       <div
         class="kat-ber2 d-flex"
         style="justify-content: center; gap: 30px; margin-top: 20px"
@@ -270,7 +270,7 @@ body {
 }
 
 .nav-p:hover {
-  color: #47b2e4c4;
+  color: #3375cc;
 }
 
 .contain-3 {
@@ -286,7 +286,7 @@ body {
 }
 
 .btn-hero:hover {
-  background-color: #47b2e4c4;
+  background-color: #3375cc;
   color: white;
   font-size: 15px;
   transition: 500ms;
@@ -297,15 +297,22 @@ body {
 
 .nama-cam {
   border: 1px solid black;
-  padding: 10px;
+  padding: 10px 10px 1px 10px;
+}
+
+.nama-cam p {
+  margin-bottom: 10px;
 }
 
 /* BERITA */
 
 .kat-ber {
-  background-color: rgba(242, 240, 240, 0.929);
-  padding: 20px;
-  padding-top: -30px;
+  background-color: #cccccc8e;
+  padding: 100px 20px 50px 20px;
+}
+
+.kat-ber h2 {
+  margin-top: 50px;
 }
 
 .kat-ber2 a {
@@ -316,11 +323,13 @@ body {
 }
 
 .kat-ber2 a:hover {
-  background-color: #47b2e4c4;
+  color: #3375cc;
+  font-weight: bold;
+  border-bottom: 2px solid #3375cc;
   padding: 10px;
 }
 
-.kat-ber2 a:active {
+.kat-ber2 a.active {
   color: #47b2e4c4;
 }
 
@@ -331,7 +340,7 @@ body {
   border-radius: 20px;
   background-color: white;
   margin-top: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .card-ber p {
@@ -343,7 +352,7 @@ body {
 }
 
 .card-ber h5 a:hover {
-  color: #47b2e4c4;
+  color: #3575cc;
 }
 
 .card-ber button {
@@ -351,12 +360,15 @@ body {
   padding: 10px;
   border-radius: 50px;
   color: white;
-  background-color: #47b2e4c4;
+  background-color: #3575cc;
   font-size: 12px;
 }
 
 .card-ber button:hover {
-  background-color: #6199b3c4;
+  background-color: #0d1f38;
+  color: white;
+  padding: 15px;
+  transition-duration: 500ms;
 }
 
 .card-ber-img img {
@@ -449,7 +461,7 @@ body {
 
 .sosmed a i:hover {
   font-size: 30px;
-  color: #47b2e4c4;
+  color: #3575cc;
 }
 
 .copyright {
