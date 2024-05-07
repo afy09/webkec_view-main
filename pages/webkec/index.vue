@@ -85,9 +85,7 @@
 
     <!-- SAMBUTAN CAMAT -->
     <div class="cam" style="margin: 120px 10px 100px 10px">
-      <h2 class="text-center">
-        SAMBUTAN <span style="color: #3575cc">CAMAT</span>
-      </h2>
+      <h2 class="text-center"><span>SAMBUTAN </span>CAMAT</h2>
       <div class="d-flex justify-content-center" style="margin-top: 50px">
         <div class="cam-img" style="margin-right: 30px">
           <img src="~/assets/img/camatbogut12.png" alt="camatbogut.jpg" />
@@ -115,7 +113,7 @@
 
     <!-- BERITA  -->
     <div class="kat-ber" style="text-align: center; padding: 15px">
-      <h2><span style="color: #3575cc">KATEGORI </span>BERITA</h2>
+      <h2>KATEGORI <span>BERITA</span></h2>
       <div
         class="kat-ber2 d-flex"
         style="justify-content: center; gap: 30px; margin-top: 20px"
@@ -177,8 +175,24 @@
     <!-- OUR AGENDA -->
 
     <div class="keg">
-      <h2>AGENDA<span style="color: #47b2e4"> KAMI</span></h2>
+      <h2><span>AGENDA</span> KEGIATAN</h2>
       <div class="keg-agn-1">
+        <div class="calender">
+          <b-row class="calender-2">
+            <b-col md="auto" class="cal-1">
+              <b-calendar
+                class="cal-2"
+                v-model="value"
+                @context="onContext"
+                locale="en-US"
+              ></b-calendar>
+            </b-col>
+            <b-col>
+              <pre class="small">{{ context }}</pre>
+            </b-col>
+          </b-row>
+        </div>
+
         <div class="keg-agn-2">
           <h4 class="keg-h4">Aula Kecamatan Bogor Utara</h4>
           <p style="font-style: italic">Kamis/2019-02-14 13:00:00</p>
@@ -203,6 +217,15 @@
     </div>
 
     <!-- OUR AGENDA END -->
+
+    <!-- LAIN-LAIN -->
+    <div class="lokban">
+      <h2>LOKASI & <span>BANNER</span></h2>
+      <div>
+        <div></div>
+      </div>
+    </div>
+    <!-- LAIN-LAIN END -->
 
     <!-- FOOTHER -->
     <footer>
@@ -295,8 +318,18 @@ body {
 
 /* CAMAT  */
 
+.cam h2 {
+  font-weight: bold;
+  color: #3375cc;
+}
+
+.cam h2 span {
+  border-bottom: 2px solid #3375cc;
+  color: black;
+}
+
 .nama-cam {
-  border: 1px solid black;
+  border: 0.5px solid black;
   padding: 10px 10px 1px 10px;
 }
 
@@ -307,12 +340,20 @@ body {
 /* BERITA */
 
 .kat-ber {
-  background-color: #cccccc8e;
+  background-image: linear-gradient(180deg, white, rgb(201, 201, 201), white);
   padding: 100px 20px 50px 20px;
 }
 
 .kat-ber h2 {
   margin-top: 50px;
+  font-weight: 900;
+  color: #3375cc;
+  margin-bottom: 50px;
+}
+
+.kat-ber h2 span {
+  border-bottom: 2px solid #3375cc;
+  color: black;
 }
 
 .kat-ber2 a {
@@ -377,16 +418,49 @@ body {
 }
 
 /* AGENDA */
+
 .keg h2 {
-  color: black;
+  color: #3375cc;
+  font-weight: bold;
   text-align: center;
-  margin: 50px 1px 50px 1px;
+  margin: 80px 1px 80px 1px;
 }
+
+.keg h2 span {
+  color: black;
+  border-bottom: 2px solid #3375cc;
+}
+
+.keg-agn-1 {
+  display: flex;
+  justify-content: start;
+}
+
+.calender {
+  margin-left: 230px;
+  /* margin: auto; */
+  display: flex;
+  justify-content: end;
+}
+
+.calender .cal-1 {
+  background-color: rgb(201, 201, 201);
+  /* background-color: #3375cc; */
+  /* background-color: #0d1f38; */
+  border: 1.5px solid #0d1f38;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+/* .calender .cal-2 {
+  background-color: white;
+} */
 
 .keg-agn-2 {
   width: 500px;
   height: 400px;
   margin-top: 20px;
+  margin-left: -300px;
   margin: auto;
   padding: 150px 50px 50px 50px;
   display: flex;
@@ -406,6 +480,20 @@ body {
   padding: 0px 0px 10px 0px;
 }
 
+/* LOKASI AND BANNER */
+.lokban {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.lokban h2 {
+  color: #3375cc;
+}
+
+.lokban h2 span {
+  color: black;
+  border-bottom: 2px solid #3375cc;
+}
 /* FOOTER */
 
 .all-footer {
@@ -532,5 +620,17 @@ export default {
       tags: tags.data,
     };
   },
+
+  // data() {
+  //   return {
+  //     value: "",
+  //     context: null,
+  //   };
+  // },
+  // methods: {
+  //   onContext(ctx) {
+  //     this.context = ctx;
+  //   },
+  // },
 };
 </script>
