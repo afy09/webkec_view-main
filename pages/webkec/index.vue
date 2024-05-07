@@ -1,7 +1,14 @@
 <template>
   <div style="background-color: white">
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
@@ -9,20 +16,19 @@
     <link rel="stylesheet" href="~/assets/css/webkec.css" />
     <!-- NAVBAR SATART -->
 
-    <div id="navbar" style="position: fixed; width: 100%; z-index: 10">
-      <b-navbar
-        class="bg-transparant"
-        style="padding: 10px 20px 10px 20px; color: blue"
-      >
-        <div>
-          <img src="~/assets/img/logobogut-03.png" />
-        </div>
-        <b-navbar-brand href="#"></b-navbar-brand>
+    <div id="navbar" style="position: fixed; width: 100%; z-index: 12">
+      <b-navbar toggleable="lg" class="navbar-2">
+        <b-navbar-brand href="#"
+          ><img src="~/assets/img/logobogut-03.png" alt=""
+        /></b-navbar-brand>
+
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
         <b-collapse id="nav-collapse" is-nav>
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-navbar-nav>
-              <b-nav-item href="#">Profil</b-nav-item>
+              <b-nav-item href="#" class="nav-p">Profil</b-nav-item>
               <b-nav-item href="#">Berita</b-nav-item>
               <b-nav-item href="#">Dokumen</b-nav-item>
               <b-nav-item href="#">Posyandu</b-nav-item>
@@ -118,40 +124,153 @@
         <div><a href="#">BERITA WILAYAH</a></div>
         <div><a href="#">BERITA KOTA</a></div>
       </div>
+      <div
+        class="card-section d-flex"
+        style="justify-content: center; gap: 30px"
+      >
+        <div class="card-ber">
+          <div class="card-ber-img">
+            <img src="~/assets/img/berita1.png" alt="berita1.jpg" />
+          </div>
+          <p>22-10-2024</p>
+          <h5 style="color: black"><a href="">Bangkitkan UMKM</a></h5>
+          <p>
+            Camat Bogor Utara, Riki Robiansah meminta seluruh lurah dan
+            bawahannya yang bertugas di Kecamatan Bogor Utara......
+          </p>
 
-      <div class="card-ber">
-        <div class="card-ber-img">
-          <img src="~/assets/img/berita1.png" alt="berita1.jpg" />
+          <button>Baca Selengkapnya</button>
         </div>
-        <p>22-10-2024</p>
-        <h5>Bangkitkan UMKM</h5>
-        <p>
-          Camat Bogor Utara, Riki Robiansah meminta seluruh lurah dan bawahannya
-          yang bertugas di Kecamatan Bogor Utara, Kota Bogor untuk memakai
-          produk lokal setiap hari Selasa.
-        </p>
 
-        <button>Baca Selengkapnya</button>
+        <div class="card-ber">
+          <div class="card-ber-img">
+            <img src="~/assets/img/berita2.png" alt="berita1.jpg" />
+          </div>
+          <p>22-10-2024</p>
+          <h5 style="color: black"><a href="">Buka Musrenbang ...</a></h5>
+          <p>
+            BOGOR. Wali Kota Bogor, Bima Arya membuka secara resmi Musyawarah
+            Rencana Pembangunan (Musrenbang) Kecamatan Bogor Utara......
+          </p>
+
+          <button>Baca Selengkapnya</button>
+        </div>
+
+        <div class="card-ber">
+          <div class="card-ber-img">
+            <img src="~/assets/img/berita3.png" alt="berita1.jpg" />
+          </div>
+          <p>22-10-2024</p>
+          <h5 style="color: black"><a href="">Gelar operasi PA di...</a></h5>
+          <p>
+            Operasi pasar dilakukan Kecamatan Bogor Utara, Kota Bogor pada hari
+            Jumat (14/01/2022). Operasi pasar tersebut dilakukan di halaman
+            Kantor Kec......
+          </p>
+
+          <button>Baca Selengkapnya</button>
+        </div>
       </div>
     </div>
     <!-- BERITA END  -->
 
-    <div>
-      <img src="" alt="" />
+    <!-- OUR AGENDA -->
+
+    <div class="keg">
+      <h2>AGENDA<span style="color: #47b2e4"> KAMI</span></h2>
+      <div class="keg-agn-1">
+        <div class="keg-agn-2">
+          <h4 class="keg-h4">Aula Kecamatan Bogor Utara</h4>
+          <p style="font-style: italic">Kamis/2019-02-14 13:00:00</p>
+          <p class="keg-p">
+            Rapat Koordinasi Mabiran Bogor Utara dengan Kwarran Bogor Utara.
+          </p>
+
+          <h4 class="keg-h4">Ruang Paseban Sri Bima Balaiko</h4>
+          <p style="font-style: italic">Kamis/2019-02-13 08:00:00</p>
+          <p class="keg-p">
+            Pelatihan Pengelolaan Kecamatan dan Kelurahan di Kota Bogor
+          </p>
+
+          <h4 class="keg-h4">Posyandu Pitaloka</h4>
+          <p style="font-style: italic">Jumat/2018-08-31 13:00:00</p>
+          <p class="keg-p">
+            lurah, ekbang, pem dan staf ke posyandu pitaloka dan sekaligus
+            memantau perbaikan jalan di rw 08
+          </p>
+        </div>
+      </div>
     </div>
+
+    <!-- OUR AGENDA END -->
+
+    <!-- FOOTHER -->
+    <footer>
+      <div class="all-footer">
+        <div class="footer-1">
+          <div class="foot-cont">
+            <i class="fa-solid fa-envelope fa-xl"></i>
+            <h3>KONTAK KAMI</h3>
+          </div>
+          <div class="foot-almt" style="margin-top: 20px">
+            <h5>Alamat Kantor :</h5>
+            <p style="margin-bottom: 20px; font-size: 14px">
+              Jl. Gagalur II No.2
+            </p>
+          </div>
+
+          <div class="foot-almt" style="margin-top: 30px">
+            <h5>Email :</h5>
+            <p style="margin-bottom: 20px; font-size: 14px">
+              kec.bout@kotabogor.go.id
+            </p>
+          </div>
+
+          <div class="foot-almt" style="margin-top: 30px">
+            <h5>No Telopn :</h5>
+            <p style="margin-bottom: 20px; font-size: 14px">(0251) 8323444</p>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="sosmed">
+          <a href="#"> <i class="fa-brands fa-instagram fa-xl"></i></a>
+          <a href="#"> <i class="fa-brands fa-x-twitter fa-xl"></i></a>
+          <a href="#"> <i class="fa-brands fa-facebook fa-xl"></i></a>
+          <a href="#"> <i class="fa-brands fa-youtube fa-xl"></i></a>
+        </div>
+        <div class="copyright">
+          <p>
+            copyright &copy; by <a href="">DISKOMINFO</a> Kota Bogor. All Right
+            Reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTHER END -->
   </div>
 </template>
 
+<!-- --------------------------- -->
 <!--------- ALL STYLE ------------->
+<!-- --------------------------- -->
 
 <style>
 body {
   font-family: "Roboto", sans-serif;
 }
 
-navbar {
+#navbar {
   color: black;
-  background-color: transparent;
+  font-weight: bold;
+  background-color: white;
+}
+
+.navbar-2 {
+  padding: 5px 60px 5px 60px;
+}
+
+.nav-p:hover {
+  color: #47b2e4c4;
 }
 
 .contain-3 {
@@ -206,16 +325,25 @@ navbar {
 }
 
 .card-ber {
-  width: 300px;
-  padding: 20px;
-  border: 1px solid black;
+  width: 250px;
+  padding: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
   border-radius: 20px;
   background-color: white;
-  margin: 30px;
+  margin-top: 35px;
+  margin-bottom: 30px;
 }
 
 .card-ber p {
   font-size: 12px;
+}
+
+.card-ber h5 a {
+  color: black;
+}
+
+.card-ber h5 a:hover {
+  color: #47b2e4c4;
 }
 
 .card-ber button {
@@ -224,16 +352,122 @@ navbar {
   border-radius: 50px;
   color: white;
   background-color: #47b2e4c4;
+  font-size: 12px;
+}
+
+.card-ber button:hover {
+  background-color: #6199b3c4;
 }
 
 .card-ber-img img {
-  width: 200px;
-  height: 250px;
+  width: 100%;
+  height: 160px;
 }
 
-/* .nama-cam h5 {
-  background-color: rgb(180, 176, 176);
-} */
+/* AGENDA */
+.keg h2 {
+  color: black;
+  text-align: center;
+  margin: 50px 1px 50px 1px;
+}
+
+.keg-agn-2 {
+  width: 500px;
+  height: 400px;
+  margin-top: 20px;
+  margin: auto;
+  padding: 150px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  overflow: scroll;
+  border-bottom: 1px dotted black;
+}
+
+.keg-h4 {
+  margin-top: 40px;
+}
+
+.keg-p {
+  border-bottom: 1px dotted black;
+  padding: 0px 0px 10px 0px;
+}
+
+/* FOOTER */
+
+.all-footer {
+  background-color: rgb(20, 18, 26);
+  margin-top: 80px;
+  padding: 50px 80px 10px 80px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.foot-cont {
+  display: flex;
+  justify-content: center;
+  color: white;
+  gap: 13px;
+}
+
+.foot-cont h3 {
+  font-size: 20px;
+}
+
+.foot-cont i {
+  padding-top: 10px;
+}
+
+.footer-1 p {
+  font-size: 15px;
+  color: white;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.sosmed {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.sosmed a {
+  color: white;
+}
+
+.sosmed a i:hover {
+  font-size: 30px;
+  color: #47b2e4c4;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+  text-align: center;
+  padding: 5px;
+  padding-top: 25px;
+}
+
+/* MEDIA QUERY / RESPONSIVE DESIGN */
+@media (max-width: 550px) {
+  .navbar-2 {
+    padding: 20px;
+  }
+}
 </style>
 
 <script>
