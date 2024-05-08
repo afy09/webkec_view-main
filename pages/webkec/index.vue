@@ -113,7 +113,7 @@
 
     <!-- BERITA  -->
     <div class="kat-ber" style="text-align: center; padding: 15px">
-      <h2>KATEGORI <span>BERITA</span></h2>
+      <h2>INFORMASI <span>TERKINI</span></h2>
       <div
         class="kat-ber2 d-flex"
         style="justify-content: center; gap: 30px; margin-top: 20px"
@@ -156,6 +156,20 @@
 
         <div class="card-ber">
           <div class="card-ber-img">
+            <img src="~/assets/img/berita4.png" alt="berita4.jpg" />
+          </div>
+          <p>22-10-2024</p>
+          <h5 style="color: black"><a href="">Bogor si asyik ...</a></h5>
+          <p>
+            Wali Kota Bogor, Bima Arya mengapresiasi Sistem Informasi Analisis
+            Potensi dan Permasalahan Kecamatan......
+          </p>
+
+          <button>Baca Selengkapnya</button>
+        </div>
+
+        <div class="card-ber">
+          <div class="card-ber-img">
             <img src="~/assets/img/berita3.png" alt="berita1.jpg" />
           </div>
           <p>22-10-2024</p>
@@ -172,60 +186,68 @@
     </div>
     <!-- BERITA END  -->
 
-    <!-- OUR AGENDA -->
+    <!-- OUR AGENDA LOKASI BANNER -->
 
     <div class="keg">
-      <h2><span>AGENDA</span> KEGIATAN</h2>
       <div class="keg-agn-1">
-        <div class="calender">
-          <b-row class="calender-2">
-            <b-col md="auto" class="cal-1">
-              <b-calendar
-                class="cal-2"
-                v-model="value"
-                @context="onContext"
-                locale="en-US"
-              ></b-calendar>
-            </b-col>
-            <b-col>
-              <pre class="small">{{ context }}</pre>
-            </b-col>
-          </b-row>
+        <div class="lok-ban">
+          <h3><span>LOKASI</span> KANTOR</h3>
+          <div class="lok">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5338823061356!2d106.80870307358114!3d-6.580352064323299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c42eb7a8c665%3A0x66758cee3516bf26!2sNorth%20Bogor%20District%20Office!5e0!3m2!1sen!2sus!4v1715149152653!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
 
-        <div class="keg-agn-2">
-          <h4 class="keg-h4">Aula Kecamatan Bogor Utara</h4>
-          <p style="font-style: italic">Kamis/2019-02-14 13:00:00</p>
-          <p class="keg-p">
-            Rapat Koordinasi Mabiran Bogor Utara dengan Kwarran Bogor Utara.
-          </p>
+        <div class="keg-cal">
+          <h3><span>AGENDA</span> KEGIATAN</h3>
+          <div class="keg-agn-2">
+            <h4 class="keg-h4">Aula Kecamatan Bogor Utara</h4>
+            <p style="font-style: italic">Kamis/2019-02-14 13:00:00</p>
+            <p class="keg-p">
+              Rapat Koordinasi Mabiran Bogor Utara dengan Kwarran Bogor Utara.
+            </p>
 
-          <h4 class="keg-h4">Ruang Paseban Sri Bima Balaiko</h4>
-          <p style="font-style: italic">Kamis/2019-02-13 08:00:00</p>
-          <p class="keg-p">
-            Pelatihan Pengelolaan Kecamatan dan Kelurahan di Kota Bogor
-          </p>
+            <h4 class="keg-h4">Ruang Paseban Sri Bima Balaiko</h4>
+            <p style="font-style: italic">Kamis/2019-02-13 08:00:00</p>
+            <p class="keg-p">
+              Pelatihan Pengelolaan Kecamatan dan Kelurahan di Kota Bogor
+            </p>
 
-          <h4 class="keg-h4">Posyandu Pitaloka</h4>
-          <p style="font-style: italic">Jumat/2018-08-31 13:00:00</p>
-          <p class="keg-p">
-            lurah, ekbang, pem dan staf ke posyandu pitaloka dan sekaligus
-            memantau perbaikan jalan di rw 08
-          </p>
+            <h4 class="keg-h4">Posyandu Pitaloka</h4>
+            <p style="font-style: italic">Jumat/2018-08-31 13:00:00</p>
+            <p class="keg-p">
+              lurah, ekbang, pem dan staf ke posyandu pitaloka dan sekaligus
+              memantau perbaikan jalan di rw 08
+            </p>
+          </div>
+          <h3><span>CALE</span>NDER</h3>
+          <div class="calender">
+            <b-row class="calender-2">
+              <b-col md="auto" class="cal-1">
+                <b-calendar
+                  class="cal-2"
+                  v-model="value"
+                  @context="onContext"
+                  locale="en-US"
+                ></b-calendar>
+              </b-col>
+              <b-col>
+                <pre class="small">{{ context }}</pre>
+              </b-col>
+            </b-row>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- OUR AGENDA END -->
-
-    <!-- LAIN-LAIN -->
-    <div class="lokban">
-      <h2>LOKASI & <span>BANNER</span></h2>
-      <div>
-        <div></div>
-      </div>
-    </div>
-    <!-- LAIN-LAIN END -->
+    <!-- OUR AGENDA LOKASI BANNER END -->
 
     <!-- FOOTHER -->
     <footer>
@@ -419,56 +441,42 @@ body {
 
 /* AGENDA */
 
-.keg h2 {
-  color: #3375cc;
-  font-weight: bold;
-  text-align: center;
-  margin: 80px 1px 80px 1px;
-}
-
-.keg h2 span {
-  color: black;
-  border-bottom: 2px solid #3375cc;
-}
-
 .keg-agn-1 {
   display: flex;
   justify-content: start;
 }
 
-.calender {
-  margin-left: 230px;
-  /* margin: auto; */
-  display: flex;
-  justify-content: end;
+.keg-cal {
+  margin: 30px;
 }
 
-.calender .cal-1 {
-  background-color: rgb(201, 201, 201);
-  /* background-color: #3375cc; */
-  /* background-color: #0d1f38; */
-  border: 1.5px solid #0d1f38;
-  border-radius: 10px;
-  padding: 30px;
+.lok-ban h3,
+.keg-cal h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #3375cc;
 }
 
-/* .calender .cal-2 {
-  background-color: white;
-} */
+.lok-ban h3 span,
+.keg-cal h3 span {
+  border-bottom: 2px solid #3375cc;
+  color: black;
+}
 
 .keg-agn-2 {
   width: 500px;
-  height: 400px;
+  height: 500px;
   margin-top: 20px;
-  margin-left: -300px;
+  margin-bottom: 50px;
   margin: auto;
-  padding: 150px 50px 50px 50px;
+  padding: 130px 50px 50px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: start;
   overflow: scroll;
-  border-bottom: 1px dotted black;
+  border-left: 1px solid black;
 }
 
 .keg-h4 {
@@ -480,19 +488,30 @@ body {
   padding: 0px 0px 10px 0px;
 }
 
+.calender {
+  /* margin-left: 230px; */
+  margin: auto;
+  display: flex;
+  justify-content: start;
+}
+
+.calender .cal-1 {
+  background-color: rgb(201, 201, 201);
+  border: 1.5px solid #0d1f38;
+  border-radius: 10px;
+  padding: 30px;
+}
+
 /* LOKASI AND BANNER */
-.lokban {
-  text-align: center;
-  margin-top: 150px;
+.lok-ban {
+  margin: 30px 30px 30px 50px;
 }
 
-.lokban h2 {
-  color: #3375cc;
-}
-
-.lokban h2 span {
-  color: black;
-  border-bottom: 2px solid #3375cc;
+.lok {
+  background-color: #3575cc;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid black;
 }
 /* FOOTER */
 
