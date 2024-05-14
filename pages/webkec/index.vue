@@ -203,6 +203,10 @@
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
+
+          <div class="peta-img">
+            <img src="~assets/img/petabogut-01.png" alt="peta_bogut" />
+          </div>
         </div>
 
         <div class="keg-cal">
@@ -243,11 +247,62 @@
               </b-col>
             </b-row>
           </div>
+
+          <h3><span>BAN</span>NER</h3>
+          <div class="ban">
+            <a href="https://jabarprov.go.id/" target="_blank" class="jabar"
+              ><img src="~/assets/img/jabar.jpg" alt="WEB_JABAR"
+            /></a>
+
+            <a href="https://kotabogor.go.id/" class="kotabogor" target="_blank"
+              ><img src="~/assets/img/kotabogor.jpg" alt="WEB_KOTABOGOR"
+            /></a>
+
+            <a href="https://www.kominfo.go.id/" class="kominfo" target="_blank"
+              ><img src="~/assets/img/kominfo.jpg" alt="WEB_KOMINFO"
+            /></a>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- OUR AGENDA LOKASI BANNER END -->
+
+    <!-- coba -->
+
+    <div class="container">
+      <div class="carousel-view">
+        <button id="prev-btn" class="prev-btn">
+          <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+            <path
+              d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+            />
+          </svg>
+        </button>
+        <div id="item-list" class="item-list">
+          <div class="card-ber">
+            <div class="card-ber-img">
+              <img src="~/assets/img/berita4.png" alt="berita4.jpg" />
+            </div>
+            <p>22-10-2024</p>
+            <h5 style="color: black"><a href="">Bogor si asyik ...</a></h5>
+            <p>
+              Wali Kota Bogor, Bima Arya mengapresiasi Sistem Informasi Analisis
+              Potensi dan Permasalahan Kecamatan......
+            </p>
+
+            <button>Baca Selengkapnya</button>
+          </div>
+        </div>
+        <button id="next-btn" class="next-btn">
+          <svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
+            <path
+              d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <!-- FOOTHER -->
     <footer>
@@ -444,6 +499,7 @@ body {
 .keg-agn-1 {
   display: flex;
   justify-content: start;
+  /* margin-left: 80px; */
 }
 
 .keg-cal {
@@ -493,6 +549,7 @@ body {
   margin: auto;
   display: flex;
   justify-content: start;
+  margin-bottom: 50px;
 }
 
 .calender .cal-1 {
@@ -502,7 +559,25 @@ body {
   padding: 30px;
 }
 
-/* LOKASI AND BANNER */
+.ban {
+  margin-top: 50px;
+}
+
+/* .ban img {
+  width: 80%;
+  height: 100px;
+} */
+
+.ban a img {
+  height: 110px;
+  margin-bottom: 20px;
+}
+
+.ban a img:hover {
+  background-color: rgba(0, 0, 0, 0.338);
+}
+
+/* LOKASI */
 .lok-ban {
   margin: 30px 30px 30px 50px;
 }
@@ -513,6 +588,75 @@ body {
   border-radius: 20px;
   border: 2px solid black;
 }
+
+.peta-img {
+  margin-top: 50px;
+}
+
+/* coba */
+
+button {
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.carousel-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 44px 0;
+  transition: all 0.25s ease-in;
+}
+
+.carousel-view .item-list {
+  max-width: 950px;
+  width: 150vw;
+  padding: 50px 10px;
+  display: flex;
+  gap: 48px;
+  scroll-behavior: smooth;
+  transition: all 0.25s ease-in;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.item-list::-webkit-scrollbar {
+  display: none;
+}
+
+.prev-btn {
+  background: none;
+  cursor: pointer;
+}
+
+.next-btn {
+  cursor: pointer;
+}
+
+.item {
+  scroll-snap-align: center;
+  min-width: 300px;
+  height: 400px;
+  background-color: deeppink;
+  border-radius: 8px;
+}
+
 /* FOOTER */
 
 .all-footer {
@@ -588,6 +732,23 @@ body {
   }
 }
 </style>
+
+<script>
+const prev = document.getElementById("prev-btn");
+const next = document.getElementById("next-btn");
+const list = document.getElementById("item-list");
+
+const itemWidth = 150;
+const padding = 10;
+
+prev.addEventListener("click", () => {
+  list.scrollLeft -= itemWidth + padding;
+});
+
+next.addEventListener("click", () => {
+  list.scrollLeft += itemWidth + padding;
+});
+</script>
 
 <script>
 import Slider from "@/components/web/slider.vue";
