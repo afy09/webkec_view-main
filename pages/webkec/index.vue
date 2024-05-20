@@ -57,8 +57,85 @@
 
     <!-- NAVBAR END -->
 
+    <!-- COBA  -->
+    <div id="slider">
+      <div class="slides">
+        <div class="slider">
+          <div class="legend"></div>
+          <div class="content">
+            <div class="content-txt">
+              <h2>Kecamatan <span>Bogor Utara</span></h2>
+              <p>
+                Selamat Datang di Website Resmi Pemerintah Kota Bogor, Kecamatan
+                Bogor Utara
+              </p>
+            </div>
+          </div>
+          <div class="image">
+            <img src="~/assets/img/BG2-KECAMATAN-01.jpg" />
+          </div>
+        </div>
+        <div class="slider">
+          <div class="legend"></div>
+          <div class="content">
+            <div class="content-txt">
+              <h2>Kecamatan <span>Bogor Utara</span></h2>
+              <p>
+                Selamat Datang di Website Resmi Pemerintah Kota Bogor, Kecamatan
+                Bogor Utara
+              </p>
+            </div>
+          </div>
+          <div class="image">
+            <img src="~/assets/img/BG2-KECAMATAN-01.jpg" />
+          </div>
+        </div>
+        <div class="slider">
+          <div class="legend"></div>
+          <div class="content">
+            <div class="content-txt">
+              <h2>Kecamatan <span>Bogor Utara</span></h2>
+              <p>
+                Selamat Datang di Website Resmi Pemerintah Kota Bogor, Kecamatan
+                Bogor Utara
+              </p>
+            </div>
+          </div>
+          <div class="image">
+            <img src="~/assets/img/BG2-KECAMATAN-01.jpg" />
+          </div>
+        </div>
+        <div class="slider">
+          <div class="legend"></div>
+          <div class="content">
+            <div class="content-txt">
+              <h2>Kecamatan <span>Bogor Utara</span></h2>
+              <p>
+                Selamat Datang di Website Resmi Pemerintah Kota Bogor, Kecamatan
+                Bogor Utara
+              </p>
+            </div>
+          </div>
+          <div class="image">
+            <img src="~/assets/img/BG2-KECAMATAN-01.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="switch">
+        <ul>
+          <li>
+            <div class="on"></div>
+          </li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <!-- COBA END -->
+
     <!-- HEAD SECTION START -->
-    <div class="hero">
+    <!-- <div class="hero">
       <div class="hero-img">
         <img
           src="~/assets/img/BG2-KECAMATAN-01.jpg"
@@ -80,7 +157,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- HEAD SECTION END -->
 
     <!-- SAMBUTAN CAMAT -->
@@ -112,76 +189,104 @@
     <!-- SAMBUTAN CAMAT END -->
 
     <!-- BERITA  -->
-    <div class="kat-ber" style="text-align: center; padding: 15px">
+    <div id="kat-ber" class="kat-ber" style="text-align: center; padding: 15px">
       <h2>INFORMASI <span>TERKINI</span></h2>
       <div
+        id="kat-btn"
         class="kat-ber2 d-flex"
         style="justify-content: center; gap: 30px; margin-top: 20px"
       >
-        <div><a href="#">BERITA TERBARU</a></div>
-        <div><a href="#">BERITA WILAYAH</a></div>
-        <div><a href="#">BERITA KOTA</a></div>
+        <button class="kat-btn active">BERITA TERBARU</button>
+        <button class="kat-btn">BERITA WILAYAH</button>
+        <button class="kat-btn">BERITA KOTA</button>
       </div>
       <div
         class="card-section d-flex"
         style="justify-content: center; gap: 30px"
       >
-        <div class="card-ber">
-          <div class="card-ber-img">
-            <img src="~/assets/img/berita1.png" alt="berita1.jpg" />
+        <!-- CAROSEL -->
+        <div class="container">
+          <div class="carousel-view">
+            <button id="prev-btn" class="prev-btn">
+              <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
+                <path
+                  d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+                />
+              </svg>
+            </button>
+            <div id="item-list" class="item-list">
+              <div class="card-ber">
+                <div class="card-ber-img">
+                  <img src="~/assets/img/berita1.png" alt="berita1.jpg" />
+                </div>
+                <p>22-10-2024</p>
+                <h5 style="color: black"><a href="">Bangkitkan UMKM</a></h5>
+                <p>
+                  Camat Bogor Utara, Riki Robiansah meminta seluruh lurah dan
+                  bawahannya yang bertugas di Kecamatan Bogor Utara......
+                </p>
+                <button>Baca Selengkapnya</button>
+              </div>
+
+              <div class="card-ber">
+                <div class="card-ber-img">
+                  <img src="~/assets/img/berita2.png" alt="berita1.jpg" />
+                </div>
+                <p>22-10-2024</p>
+                <h5 style="color: black"><a href="">Buka Musrenbang ...</a></h5>
+                <p>
+                  BOGOR. Wali Kota Bogor, Bima Arya membuka secara resmi
+                  Musyawarah Rencana Pembangunan (Musrenbang) Kecamatan Bogor
+                  Utara......
+                </p>
+
+                <button>Baca Selengkapnya</button>
+              </div>
+
+              <div class="card-ber">
+                <div class="card-ber-img">
+                  <img src="~/assets/img/berita3.png" alt="berita1.jpg" />
+                </div>
+                <p>22-10-2024</p>
+                <h5 style="color: black">
+                  <a href="">Gelar operasi PA di...</a>
+                </h5>
+                <p>
+                  Operasi pasar dilakukan Kecamatan Bogor Utara, Kota Bogor pada
+                  hari Jumat (14/01/2022). Operasi pasar tersebut dilakukan di
+                  halaman Kantor Kec......
+                </p>
+
+                <button>Baca Selengkapnya</button>
+              </div>
+
+              <div class="card-ber">
+                <div class="card-ber-img">
+                  <img src="~/assets/img/berita4.png" alt="berita4.jpg" />
+                </div>
+                <p>22-10-2024</p>
+                <h5 style="color: black"><a href="">Bogor si asyik ...</a></h5>
+                <p>
+                  Wali Kota Bogor, Bima Arya mengapresiasi Sistem Informasi
+                  Analisis Potensi dan Permasalahan Kecamatan......
+                </p>
+                <button>Baca Selengkapnya</button>
+              </div>
+            </div>
+            <button id="next-btn" class="next-btn">
+              <svg
+                viewBox="0 0 512 512"
+                width="20"
+                title="chevron-circle-right"
+              >
+                <path
+                  d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+                />
+              </svg>
+            </button>
           </div>
-          <p>22-10-2024</p>
-          <h5 style="color: black"><a href="">Bangkitkan UMKM</a></h5>
-          <p>
-            Camat Bogor Utara, Riki Robiansah meminta seluruh lurah dan
-            bawahannya yang bertugas di Kecamatan Bogor Utara......
-          </p>
-
-          <button>Baca Selengkapnya</button>
         </div>
-
-        <div class="card-ber">
-          <div class="card-ber-img">
-            <img src="~/assets/img/berita2.png" alt="berita1.jpg" />
-          </div>
-          <p>22-10-2024</p>
-          <h5 style="color: black"><a href="">Buka Musrenbang ...</a></h5>
-          <p>
-            BOGOR. Wali Kota Bogor, Bima Arya membuka secara resmi Musyawarah
-            Rencana Pembangunan (Musrenbang) Kecamatan Bogor Utara......
-          </p>
-
-          <button>Baca Selengkapnya</button>
-        </div>
-
-        <div class="card-ber">
-          <div class="card-ber-img">
-            <img src="~/assets/img/berita4.png" alt="berita4.jpg" />
-          </div>
-          <p>22-10-2024</p>
-          <h5 style="color: black"><a href="">Bogor si asyik ...</a></h5>
-          <p>
-            Wali Kota Bogor, Bima Arya mengapresiasi Sistem Informasi Analisis
-            Potensi dan Permasalahan Kecamatan......
-          </p>
-
-          <button>Baca Selengkapnya</button>
-        </div>
-
-        <div class="card-ber">
-          <div class="card-ber-img">
-            <img src="~/assets/img/berita3.png" alt="berita1.jpg" />
-          </div>
-          <p>22-10-2024</p>
-          <h5 style="color: black"><a href="">Gelar operasi PA di...</a></h5>
-          <p>
-            Operasi pasar dilakukan Kecamatan Bogor Utara, Kota Bogor pada hari
-            Jumat (14/01/2022). Operasi pasar tersebut dilakukan di halaman
-            Kantor Kec......
-          </p>
-
-          <button>Baca Selengkapnya</button>
-        </div>
+        <!-- CAROSEL END -->
       </div>
     </div>
     <!-- BERITA END  -->
@@ -267,42 +372,6 @@
     </div>
 
     <!-- OUR AGENDA LOKASI BANNER END -->
-
-    <!-- coba -->
-
-    <div class="container">
-      <div class="carousel-view">
-        <button id="prev-btn" class="prev-btn">
-          <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
-            <path
-              d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
-            />
-          </svg>
-        </button>
-        <div id="item-list" class="item-list">
-          <div class="card-ber">
-            <div class="card-ber-img">
-              <img src="~/assets/img/berita4.png" alt="berita4.jpg" />
-            </div>
-            <p>22-10-2024</p>
-            <h5 style="color: black"><a href="">Bogor si asyik ...</a></h5>
-            <p>
-              Wali Kota Bogor, Bima Arya mengapresiasi Sistem Informasi Analisis
-              Potensi dan Permasalahan Kecamatan......
-            </p>
-
-            <button>Baca Selengkapnya</button>
-          </div>
-        </div>
-        <button id="next-btn" class="next-btn">
-          <svg viewBox="0 0 512 512" width="20" title="chevron-circle-right">
-            <path
-              d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
-            />
-          </svg>
-        </button>
-      </div>
-    </div>
 
     <!-- FOOTHER -->
     <footer>
@@ -393,6 +462,408 @@ body {
   border-style: none;
 }
 
+/* COBA */
+#slider {
+  width: 100%;
+  height: 580px;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes load {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 0;
+  }
+}
+.slides {
+  width: 400%;
+  height: 100%;
+  margin-top: 20px;
+  position: relative;
+  -webkit-animation: slide 30s infinite;
+  -moz-animation: slide 30s infinite;
+  animation: slide 30s infinite;
+}
+.slider {
+  width: 25%;
+  height: 100%;
+  float: left;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+}
+.slide img {
+  width: 100%;
+  height: 10%;
+}
+.image {
+  width: 100%;
+  height: 100%;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Legend */
+.legend {
+  border: 500px solid transparent;
+  border-left: 800px solid #3574cc2b;
+  border-bottom: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Contents */
+.content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+.content-txt {
+  width: 400px;
+  height: 150px;
+  float: left;
+  position: relative;
+  top: 350px;
+  -webkit-animation: content-s 7.5s infinite;
+  -moz-animation: content-s 7.5s infinite;
+  animation: content-s 7.5s infinite;
+}
+.content-txt h2 {
+  text-transform: uppercase;
+  font-size: 24px;
+  color: black;
+  text-align: left;
+  margin-left: 30px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.content-txt h2 span {
+  color: #3375cc;
+  font-weight: bold;
+}
+.content-txt p {
+  font-weight: normal;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+  text-align: left;
+  margin-left: 30px;
+}
+
+/* Switch */
+.switch {
+  width: 120px;
+  height: 10px;
+  position: absolute;
+  bottom: 50px;
+  z-index: 99;
+  left: 30px;
+}
+.switch > ul {
+  list-style: none;
+}
+.switch > ul > li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #333;
+  float: left;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.switch ul {
+  overflow: hidden;
+}
+.on {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #3375cc;
+  position: relative;
+  -webkit-animation: on 30s infinite;
+  -moz-animation: on 30s infinite;
+  animation: on 30s infinite;
+}
+
+/* Animation */
+@-webkit-keyframes slide {
+  0%,
+  100% {
+    margin-left: 0%;
+  }
+  21% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  46% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  71% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  96% {
+    margin-left: -300%;
+  }
+}
+@-moz-keyframes slide {
+  0%,
+  100% {
+    margin-left: 0%;
+  }
+  21% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  46% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  71% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  96% {
+    margin-left: -300%;
+  }
+}
+@keyframes slide {
+  0%,
+  100% {
+    margin-left: 0%;
+  }
+  21% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  46% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  71% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  96% {
+    margin-left: -300%;
+  }
+}
+
+@-webkit-keyframes content-s {
+  0% {
+    left: -420px;
+  }
+  10% {
+    left: 0px;
+  }
+  30% {
+    left: 0px;
+  }
+  40% {
+    left: 0px;
+  }
+  50% {
+    left: 0px;
+  }
+  60% {
+    left: 0px;
+  }
+  70% {
+    left: 0;
+  }
+  80% {
+    left: -420px;
+  }
+  90% {
+    left: -420px;
+  }
+  100% {
+    left: -420px;
+  }
+}
+@-moz-keyframes content-s {
+  0% {
+    left: -420px;
+  }
+  10% {
+    left: 0px;
+  }
+  30% {
+    left: 0px;
+  }
+  40% {
+    left: 0px;
+  }
+  50% {
+    left: 0px;
+  }
+  60% {
+    left: 0px;
+  }
+  70% {
+    left: 0;
+  }
+  80% {
+    left: -420px;
+  }
+  90% {
+    left: -420px;
+  }
+  100% {
+    left: -420px;
+  }
+}
+@keyframes content-s {
+  0% {
+    left: -420px;
+  }
+  10% {
+    left: 20px;
+  }
+  15% {
+    left: 0px;
+  }
+  30% {
+    left: 0px;
+  }
+  40% {
+    left: 0px;
+  }
+  50% {
+    left: 0px;
+  }
+  60% {
+    left: 0px;
+  }
+  70% {
+    left: 0;
+  }
+  80% {
+    left: -420px;
+  }
+  90% {
+    left: -420px;
+  }
+  100% {
+    left: -420px;
+  }
+}
+
+@-webkit-keyframes on {
+  0%,
+  100% {
+    margin-left: 0%;
+  }
+  21% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: 15px;
+  }
+  46% {
+    margin-left: 15px;
+  }
+  50% {
+    margin-left: 30px;
+  }
+  71% {
+    margin-left: 30px;
+  }
+  75% {
+    margin-left: 45px;
+  }
+  96% {
+    margin-left: 45px;
+  }
+}
+
+@-moz-keyframes on {
+  0%,
+  100% {
+    margin-left: 0%;
+  }
+  21% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: 15px;
+  }
+  46% {
+    margin-left: 15px;
+  }
+  50% {
+    margin-left: 30px;
+  }
+  71% {
+    margin-left: 30px;
+  }
+  75% {
+    margin-left: 45px;
+  }
+  96% {
+    margin-left: 45px;
+  }
+}
+
+@keyframes on {
+  0%,
+  100% {
+    margin-left: 0%;
+  }
+  21% {
+    margin-left: 0%;
+  }
+  25% {
+    margin-left: 15px;
+  }
+  46% {
+    margin-left: 15px;
+  }
+  50% {
+    margin-left: 30px;
+  }
+  71% {
+    margin-left: 30px;
+  }
+  75% {
+    margin-left: 45px;
+  }
+  96% {
+    margin-left: 45px;
+  }
+}
+/* COBA */
+
 /* CAMAT  */
 
 .cam h2 {
@@ -433,34 +904,93 @@ body {
   color: black;
 }
 
-.kat-ber2 a {
+.kat-btn {
   color: black;
   font-size: 15px;
   font-weight: 400;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  border: none;
 }
 
-.kat-ber2 a:hover {
+.active,
+.kat-btn:hover {
   color: #3375cc;
   font-weight: bold;
   border-bottom: 2px solid #3375cc;
   padding: 10px;
+  cursor: pointer;
+  z-index: 7;
 }
 
-.kat-ber2 a.active {
-  color: #47b2e4c4;
+/* corasel */
+
+button {
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.container {
+  /* width: 100%; */
+  height: auto;
+  margin-top: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: white; */
+}
+
+.carousel-view {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  /* padding: 100px 0; */
+  transition: all 0.25s ease-in;
+}
+
+.carousel-view .item-list {
+  max-width: 950px;
+  width: auto;
+  /* padding: 10px; */
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  scroll-behavior: smooth;
+  transition: all 0.25s ease-in;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.item-list::-webkit-scrollbar {
+  display: none;
+}
+
+.prev-btn {
+  background: none;
+  cursor: pointer;
+}
+
+.next-btn {
+  cursor: pointer;
 }
 
 .card-ber {
-  width: 250px;
-  padding: 15px;
+  scroll-snap-align: center;
+  min-width: 300px;
+  height: auto;
+  padding: 20px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
   border-radius: 20px;
+  margin: 10px;
   background-color: white;
-  margin-top: 35px;
-  margin-bottom: 50px;
 }
-
 .card-ber p {
   font-size: 12px;
 }
@@ -491,7 +1021,7 @@ body {
 
 .card-ber-img img {
   width: 100%;
-  height: 160px;
+  height: 190px;
 }
 
 /* AGENDA */
@@ -593,70 +1123,6 @@ body {
   margin-top: 50px;
 }
 
-/* coba */
-
-button {
-  border: none;
-  cursor: pointer;
-  color: white;
-  background: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-}
-
-.carousel-view {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  padding: 44px 0;
-  transition: all 0.25s ease-in;
-}
-
-.carousel-view .item-list {
-  max-width: 950px;
-  width: 150vw;
-  padding: 50px 10px;
-  display: flex;
-  gap: 48px;
-  scroll-behavior: smooth;
-  transition: all 0.25s ease-in;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  overflow: auto;
-  scroll-snap-type: x mandatory;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.item-list::-webkit-scrollbar {
-  display: none;
-}
-
-.prev-btn {
-  background: none;
-  cursor: pointer;
-}
-
-.next-btn {
-  cursor: pointer;
-}
-
-.item {
-  scroll-snap-align: center;
-  min-width: 300px;
-  height: 400px;
-  background-color: deeppink;
-  border-radius: 8px;
-}
-
 /* FOOTER */
 
 .all-footer {
@@ -733,6 +1199,11 @@ button {
 }
 </style>
 
+<!-- --------- -->
+<!--ALL SCRIPT -->
+<!-- --------- -->
+
+<!-- script slide card -->
 <script>
 const prev = document.getElementById("prev-btn");
 const next = document.getElementById("next-btn");
@@ -749,7 +1220,9 @@ next.addEventListener("click", () => {
   list.scrollLeft += itemWidth + padding;
 });
 </script>
+<!-- script slide card end -->
 
+<!-- script vue -->
 <script>
 import Slider from "@/components/web/slider.vue";
 
@@ -784,23 +1257,6 @@ export default {
     };
   },
 
-  async asyncData({ $axios }) {
-    //fetching posts
-    const posts = await $axios.$get("/api/web/postHomepage");
-
-    //fetching categories
-    const categories = await $axios.$get("/api/web/categorySidebar");
-
-    //fetching tags
-    const tags = await $axios.$get("/api/web/tags");
-
-    return {
-      posts: posts.data,
-      categories: categories.data,
-      tags: tags.data,
-    };
-  },
-
   // data() {
   //   return {
   //     value: "",
@@ -814,3 +1270,4 @@ export default {
   // },
 };
 </script>
+<!-- script end -->
