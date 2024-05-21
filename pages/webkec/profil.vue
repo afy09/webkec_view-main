@@ -28,7 +28,7 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-navbar-nav>
-              <b-nav-item href="profil" class="nav-p">Profil</b-nav-item>
+              <b-nav-item href="#" class="nav-p">Profil</b-nav-item>
               <b-nav-item href="#">Berita</b-nav-item>
               <b-nav-item href="#">Dokumen</b-nav-item>
               <b-nav-item href="#">Posyandu</b-nav-item>
@@ -88,7 +88,7 @@
             </div>
           </div>
           <div class="image">
-            <img src="~/assets/img/banner2.jpg" />
+            <img src="~/assets/img/banner1.jpg" />
           </div>
         </div>
 
@@ -136,219 +136,6 @@
       </div>
     </div>
     <!-- HERO SECTION END-->
-
-    <!-- SAMBUTAN CAMAT -->
-    <div class="cam" style="margin: 120px 10px 100px 10px">
-      <h2 class="text-center"><span>SAMBUTAN </span>CAMAT</h2>
-      <div class="d-flex justify-content-center" style="margin-top: 50px">
-        <div class="cam-img" style="margin-right: 30px">
-          <img src="~/assets/img/camatbogut12.png" alt="camatbogut.jpg" />
-          <div class="nama-cam" style="text-align: center">
-            <h5>Camat Kec. Bogor Utara</h5>
-            <p>Riki Robiansah, S.STP</p>
-          </div>
-        </div>
-        <div class="cam-sam" style="width: 500px">
-          <p>
-            Rasa sykur terbesar selalu terhaturkan kepada Allah SWT. Karena
-            nikmat kesehatan dan kesempatan dari-Nya, masyarakat Kota Bogor
-            tetap bersemangat menuju hidup sehat. Selamat datang di situs resmi
-            Website Kecamatan Bogor Utara Kota Bogor. Website Kecamatan Bogor
-            Utara memuat profil Kecamatan Bogor Utara dan informasi penting
-            berbagai program dan kegiatan Kecamatan Bogor Utara Kota Bogor. Kami
-            harap website ini dapat bermanfaat dalam memberikan data dan
-            informasi yang dapat digunakan untuk masyarakat.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- SAMBUTAN CAMAT END -->
-
-    <!-- BERITA  -->
-    <div id="kat-ber" class="kat-ber" style="text-align: center; padding: 15px">
-      <h2>INFORMASI <span>TERKINI</span></h2>
-      <div
-        id="kat-btn"
-        class="kat-ber2 d-flex"
-        style="justify-content: center; gap: 30px; margin-top: 20px"
-      >
-        <button class="kat-btn active">BERITA TERBARU</button>
-        <button class="kat-btn">BERITA WILAYAH</button>
-        <button class="kat-btn">BERITA KOTA</button>
-      </div>
-      <div
-        class="card-section d-flex"
-        style="justify-content: center; gap: 30px"
-      >
-        <!-- CAROSEL -->
-        <div class="container">
-          <div class="carousel-view">
-            <button id="prev-btn" class="prev-btn">
-              <svg viewBox="0 0 512 512" width="20" title="chevron-circle-left">
-                <path
-                  d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
-                />
-              </svg>
-            </button>
-            <div id="item-list" class="item-list">
-              <div class="card-ber">
-                <div class="card-ber-img">
-                  <img src="~/assets/img/berita1.png" alt="berita1.jpg" />
-                </div>
-                <p>22-10-2024</p>
-                <h5 style="color: black"><a href="">Bangkitkan UMKM</a></h5>
-                <p>
-                  Camat Bogor Utara, Riki Robiansah meminta seluruh lurah dan
-                  bawahannya yang bertugas di Kecamatan Bogor Utara......
-                </p>
-                <button>Baca Selengkapnya</button>
-              </div>
-
-              <div class="card-ber">
-                <div class="card-ber-img">
-                  <img src="~/assets/img/berita2.png" alt="berita1.jpg" />
-                </div>
-                <p>22-10-2024</p>
-                <h5 style="color: black"><a href="">Buka Musrenbang ...</a></h5>
-                <p>
-                  BOGOR. Wali Kota Bogor, Bima Arya membuka secara resmi
-                  Musyawarah Rencana Pembangunan (Musrenbang) Kecamatan Bogor
-                  Utara......
-                </p>
-
-                <button>Baca Selengkapnya</button>
-              </div>
-
-              <div class="card-ber">
-                <div class="card-ber-img">
-                  <img src="~/assets/img/berita3.png" alt="berita1.jpg" />
-                </div>
-                <p>22-10-2024</p>
-                <h5 style="color: black">
-                  <a href="">Gelar operasi PA di...</a>
-                </h5>
-                <p>
-                  Operasi pasar dilakukan Kecamatan Bogor Utara, Kota Bogor pada
-                  hari Jumat (14/01/2022). Operasi pasar tersebut dilakukan di
-                  halaman Kantor Kec......
-                </p>
-
-                <button>Baca Selengkapnya</button>
-              </div>
-
-              <div class="card-ber">
-                <div class="card-ber-img">
-                  <img src="~/assets/img/berita4.png" alt="berita4.jpg" />
-                </div>
-                <p>22-10-2024</p>
-                <h5 style="color: black"><a href="">Bogor si asyik ...</a></h5>
-                <p>
-                  Wali Kota Bogor, Bima Arya mengapresiasi Sistem Informasi
-                  Analisis Potensi dan Permasalahan Kecamatan......
-                </p>
-                <button>Baca Selengkapnya</button>
-              </div>
-            </div>
-            <button id="next-btn" class="next-btn">
-              <svg
-                viewBox="0 0 512 512"
-                width="20"
-                title="chevron-circle-right"
-              >
-                <path
-                  d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <!-- CAROSEL END -->
-      </div>
-    </div>
-    <!-- BERITA END  -->
-
-    <!-- OUR AGENDA LOKASI BANNER -->
-
-    <div class="keg">
-      <div class="keg-agn-1">
-        <div class="lok-ban">
-          <h3><span>LOKASI</span> KANTOR</h3>
-          <div class="lok">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.5338823061356!2d106.80870307358114!3d-6.580352064323299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c42eb7a8c665%3A0x66758cee3516bf26!2sNorth%20Bogor%20District%20Office!5e0!3m2!1sen!2sus!4v1715149152653!5m2!1sen!2sus"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-
-          <div class="peta-img">
-            <img src="~assets/img/petabogut-01.png" alt="peta_bogut" />
-          </div>
-        </div>
-
-        <div class="keg-cal">
-          <h3><span>AGENDA</span> KEGIATAN</h3>
-          <div class="keg-agn-2">
-            <h4 class="keg-h4">Aula Kecamatan Bogor Utara</h4>
-            <p style="font-style: italic">Kamis/2019-02-14 13:00:00</p>
-            <p class="keg-p">
-              Rapat Koordinasi Mabiran Bogor Utara dengan Kwarran Bogor Utara.
-            </p>
-
-            <h4 class="keg-h4">Ruang Paseban Sri Bima Balaiko</h4>
-            <p style="font-style: italic">Kamis/2019-02-13 08:00:00</p>
-            <p class="keg-p">
-              Pelatihan Pengelolaan Kecamatan dan Kelurahan di Kota Bogor
-            </p>
-
-            <h4 class="keg-h4">Posyandu Pitaloka</h4>
-            <p style="font-style: italic">Jumat/2018-08-31 13:00:00</p>
-            <p class="keg-p">
-              lurah, ekbang, pem dan staf ke posyandu pitaloka dan sekaligus
-              memantau perbaikan jalan di rw 08
-            </p>
-          </div>
-          <h3><span>CALE</span>NDER</h3>
-          <div class="calender">
-            <b-row class="calender-2">
-              <b-col md="auto" class="cal-1">
-                <b-calendar
-                  class="cal-2"
-                  v-model="value"
-                  @context="onContext"
-                  locale="en-US"
-                ></b-calendar>
-              </b-col>
-              <b-col>
-                <pre class="small">{{ context }}</pre>
-              </b-col>
-            </b-row>
-          </div>
-
-          <h3><span>BAN</span>NER</h3>
-          <div class="ban">
-            <a href="https://jabarprov.go.id/" target="_blank" class="jabar"
-              ><img src="~/assets/img/jabar.jpg" alt="WEB_JABAR"
-            /></a>
-
-            <a href="https://kotabogor.go.id/" class="kotabogor" target="_blank"
-              ><img src="~/assets/img/kotabogor.jpg" alt="WEB_KOTABOGOR"
-            /></a>
-
-            <a href="https://www.kominfo.go.id/" class="kominfo" target="_blank"
-              ><img src="~/assets/img/kominfo.jpg" alt="WEB_KOMINFO"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- OUR AGENDA LOKASI BANNER END -->
 
     <!-- FOOTHER -->
     <footer>
@@ -415,6 +202,10 @@ body {
   padding: 5px 60px 5px 60px;
 }
 
+.nav-p:hover {
+  color: #3375cc;
+}
+
 .contain-3 {
   background-color: rgba(255, 255, 255, 0.53);
 }
@@ -434,6 +225,10 @@ body {
   transition: 500ms;
   border-style: none;
 }
+
+/**
+ * ALL STYLE
+ */
 
 /* HERO SECTION */
 #slider {
@@ -846,266 +641,6 @@ body {
     margin-left: 45px;
   }
 }
-/* COBA */
-
-/* CAMAT  */
-
-.cam h2 {
-  font-weight: bold;
-  color: #3375cc;
-}
-
-.cam h2 span {
-  border-bottom: 2px solid #3375cc;
-  color: black;
-}
-
-.nama-cam {
-  border: 0.5px solid black;
-  padding: 10px 10px 1px 10px;
-}
-
-.nama-cam p {
-  margin-bottom: 10px;
-}
-
-/* BERITA */
-
-.kat-ber {
-  background-image: linear-gradient(180deg, white, rgb(201, 201, 201), white);
-  padding: 100px 20px 50px 20px;
-}
-
-.kat-ber h2 {
-  margin-top: 50px;
-  font-weight: 900;
-  color: #3375cc;
-  margin-bottom: 50px;
-}
-
-.kat-ber h2 span {
-  border-bottom: 2px solid #3375cc;
-  color: black;
-}
-
-.kat-btn {
-  color: black;
-  font-size: 15px;
-  font-weight: 400;
-  /* margin-top: 50px; */
-  border: none;
-}
-
-.active,
-.kat-btn:hover {
-  color: #3375cc;
-  font-weight: bold;
-  border-bottom: 2px solid #3375cc;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 7;
-}
-
-/* corasel */
-
-button {
-  border: none;
-  cursor: pointer;
-  color: white;
-  background: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.container {
-  /* width: 100%; */
-  height: auto;
-  margin-top: 30px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: white; */
-}
-
-.carousel-view {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  /* padding: 100px 0; */
-  transition: all 0.25s ease-in;
-}
-
-.carousel-view .item-list {
-  max-width: 950px;
-  width: auto;
-  /* padding: 10px; */
-  display: flex;
-  gap: 20px;
-  text-align: center;
-  scroll-behavior: smooth;
-  transition: all 0.25s ease-in;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  overflow: auto;
-  scroll-snap-type: x mandatory;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.item-list::-webkit-scrollbar {
-  display: none;
-}
-
-.prev-btn {
-  background: none;
-  cursor: pointer;
-}
-
-.next-btn {
-  cursor: pointer;
-}
-
-.card-ber {
-  scroll-snap-align: center;
-  min-width: 300px;
-  height: auto;
-  padding: 20px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
-  border-radius: 20px;
-  margin: 10px;
-  background-color: white;
-}
-.card-ber p {
-  font-size: 12px;
-}
-
-.card-ber h5 a {
-  color: black;
-}
-
-.card-ber h5 a:hover {
-  color: #3575cc;
-}
-
-.card-ber button {
-  border-style: none;
-  padding: 10px;
-  border-radius: 50px;
-  color: white;
-  background-color: #3575cc;
-  font-size: 12px;
-}
-
-.card-ber button:hover {
-  background-color: #0d1f38;
-  color: white;
-  padding: 15px;
-  transition-duration: 500ms;
-}
-
-.card-ber-img img {
-  width: 100%;
-  height: 190px;
-}
-
-/* AGENDA */
-
-.keg-agn-1 {
-  display: flex;
-  justify-content: start;
-  /* margin-left: 80px; */
-}
-
-.keg-cal {
-  margin: 30px;
-}
-
-.lok-ban h3,
-.keg-cal h3 {
-  font-weight: bold;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  color: #3375cc;
-}
-
-.lok-ban h3 span,
-.keg-cal h3 span {
-  border-bottom: 2px solid #3375cc;
-  color: black;
-}
-
-.keg-agn-2 {
-  width: 500px;
-  height: 500px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  margin: auto;
-  padding: 130px 50px 50px 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: start;
-  overflow: scroll;
-  border-left: 1px solid black;
-}
-
-.keg-h4 {
-  margin-top: 40px;
-}
-
-.keg-p {
-  border-bottom: 1px dotted black;
-  padding: 0px 0px 10px 0px;
-}
-
-.calender {
-  /* margin-left: 230px; */
-  margin: auto;
-  display: flex;
-  justify-content: start;
-  margin-bottom: 50px;
-}
-
-.calender .cal-1 {
-  background-color: rgb(201, 201, 201);
-  border: 1.5px solid #0d1f38;
-  border-radius: 10px;
-  padding: 30px;
-}
-
-.ban {
-  margin-top: 50px;
-}
-
-/* .ban img {
-  width: 80%;
-  height: 100px;
-} */
-
-.ban a img {
-  height: 110px;
-  margin-bottom: 20px;
-}
-
-.ban a img:hover {
-  background-color: rgba(0, 0, 0, 0.338);
-}
-
-/* LOKASI */
-.lok-ban {
-  margin: 30px 30px 30px 50px;
-}
-
-.lok {
-  background-color: #3575cc;
-  padding: 20px;
-  border-radius: 20px;
-  border: 2px solid black;
-}
-
-.peta-img {
-  margin-top: 50px;
-}
 
 /* FOOTER */
 
@@ -1174,20 +709,9 @@ button {
   padding: 5px;
   padding-top: 25px;
 }
-
-/* MEDIA QUERY / RESPONSIVE DESIGN */
-@media (max-width: 550px) {
-  .navbar-2 {
-    padding: 20px;
-  }
-}
+/* COBA */
 </style>
 
-<!-- --------- -->
-<!--ALL SCRIPT -->
-<!-- --------- -->
-
-<!-- script slide card -->
 <script>
 const prev = document.getElementById("prev-btn");
 const next = document.getElementById("next-btn");
@@ -1220,7 +744,7 @@ export default {
   //meta
   head() {
     return {
-      title: "Kecamatan Bogor Utara",
+      title: "PROFIL | Kecamatan Bogor Utara",
       meta: [
         {
           hid: "og:title",
@@ -1254,4 +778,3 @@ export default {
   // },
 };
 </script>
-<!-- script end -->
