@@ -104,7 +104,7 @@
             </div>
           </div>
           <div class="image">
-            <img src="~/assets/img/BG2-KECAMATAN-01.jpg" />
+            <img src="~/assets/img/banner3.jpg" />
           </div>
         </div>
 
@@ -140,15 +140,18 @@
     <!-- SAMBUTAN CAMAT -->
     <div class="cam" style="margin: 120px 10px 100px 10px">
       <h2 class="text-center"><span>SAMBUTAN </span>CAMAT</h2>
-      <div class="d-flex justify-content-center" style="margin-top: 50px">
-        <div class="cam-img" style="margin-right: 30px">
+      <div
+        class="cam-img-sam d-flex justify-content-center"
+        style="margin-top: 50px"
+      >
+        <div class="cam-img">
           <img src="~/assets/img/camatbogut12.png" alt="camatbogut.jpg" />
           <div class="nama-cam" style="text-align: center">
             <h5>Camat Kec. Bogor Utara</h5>
             <p>Riki Robiansah, S.STP</p>
           </div>
         </div>
-        <div class="cam-sam" style="width: 500px">
+        <div class="cam-sam">
           <p>
             Rasa sykur terbesar selalu terhaturkan kepada Allah SWT. Karena
             nikmat kesehatan dan kesempatan dari-Nya, masyarakat Kota Bogor
@@ -860,6 +863,10 @@ body {
   color: black;
 }
 
+.cam-img-sam {
+  gap: 20px;
+}
+
 .nama-cam {
   border: 0.5px solid black;
   padding: 10px 10px 1px 10px;
@@ -867,6 +874,10 @@ body {
 
 .nama-cam p {
   margin-bottom: 10px;
+}
+
+.cam-sam {
+  width: 40%;
 }
 
 /* BERITA */
@@ -917,7 +928,7 @@ button {
 }
 
 .container {
-  /* width: 100%; */
+  width: 100%;
   height: auto;
   margin-top: 30px;
   padding: 10px;
@@ -1179,6 +1190,112 @@ button {
 @media (max-width: 550px) {
   .navbar-2 {
     padding: 20px;
+  }
+
+  #slider {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .legend {
+    display: none;
+  }
+
+  .content {
+    display: none;
+  }
+
+  /* SAM MOBILE */
+  .cam-img-sam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cam h2 {
+    font-size: 25px;
+    margin-bottom: 100px;
+  }
+
+  .cam-img img {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cam-sam {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  /* KATBER MOBILE */
+  .kat-ber h2 {
+    font-size: 25px;
+    margin-top: -30px;
+  }
+
+  .kat-btn {
+    font-size: 13px;
+  }
+
+  .carousel-view .item-list {
+    max-width: 300px;
+  }
+
+  /* LOKASI, CAL, BAN */
+
+  .keg-agn-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .keg-agn-1 h3 {
+    font-size: 20px;
+  }
+
+  .lok-ban h3 {
+    font-size: 23px;
+  }
+
+  .lok iframe {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+  }
+
+  .peta-img img {
+    width: 100%;
+    margin: 10px;
+  }
+
+  .keg-cal h3 {
+    font-size: 23px;
+  }
+
+  .keg-agn-2 {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+
+  .keg-h4 {
+    font-size: 18px;
+  }
+
+  .keg-p {
+    font-size: 12px;
+  }
+
+  .calender .cal-1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
 </style>
