@@ -88,7 +88,7 @@
             </div>
           </div>
           <div class="image">
-            <img src="~/assets/img/banner2.jpg" />
+            <img src="~/assets/img/banner1revv.jpg" />
           </div>
         </div>
 
@@ -1187,6 +1187,7 @@ button {
 }
 
 /* MEDIA QUERY / RESPONSIVE DESIGN */
+
 @media (max-width: 550px) {
   .navbar-2 {
     padding: 20px;
@@ -1243,7 +1244,10 @@ button {
   }
 
   .carousel-view .item-list {
-    max-width: 300px;
+    max-width: 270px;
+  }
+  .card-ber {
+    min-width: 250px;
   }
 
   /* LOKASI, CAL, BAN */

@@ -28,7 +28,7 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-navbar-nav>
-              <b-nav-item href="#" class="nav-p">Profil</b-nav-item>
+              <b-nav-item href="profil" class="nav-p">Profil</b-nav-item>
               <b-nav-item href="#">Berita</b-nav-item>
               <b-nav-item href="#">Dokumen</b-nav-item>
               <b-nav-item href="#">Posyandu</b-nav-item>
@@ -88,7 +88,7 @@
             </div>
           </div>
           <div class="image">
-            <img src="~/assets/img/banner1.jpg" />
+            <img src="~/assets/img/banner1revv.jpg" />
           </div>
         </div>
 
@@ -104,7 +104,7 @@
             </div>
           </div>
           <div class="image">
-            <img src="~/assets/img/BG2-KECAMATAN-01.jpg" />
+            <img src="~/assets/img/banner3.jpg" />
           </div>
         </div>
 
@@ -136,6 +136,21 @@
       </div>
     </div>
     <!-- HERO SECTION END-->
+
+    <!-- PROFIL START -->
+    <div class="profil">
+      <b-tabs content-class="mt-3" fill>
+        <b-tab title="Profil Kecamatan" active class="tabs"
+          ><p>I'm the first tab</p></b-tab
+        >
+        <b-tab title="Visi dan Misi"><p>I'm the second tab</p></b-tab>
+        <b-tab title="Data Pejabat"><p>I'm the first tab</p></b-tab>
+        <b-tab title="Struktur Organisasi"><p>I'm the first tab</p></b-tab>
+        <b-tab title="Peta Wilayah"><p>I'm the first tab</p></b-tab>
+        <b-tab title="Data Demografi"><p>I'm the first tab</p></b-tab>
+      </b-tabs>
+    </div>
+    <!-- PROFIL START END -->
 
     <!-- FOOTHER -->
     <footer>
@@ -183,11 +198,8 @@
   </div>
 </template>
 
-<!-- --------------------------- -->
-<!--------- ALL STYLE ------------->
-<!-- --------------------------- -->
-
 <style>
+/* NAVBAR */
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -201,34 +213,6 @@ body {
 .navbar-2 {
   padding: 5px 60px 5px 60px;
 }
-
-.nav-p:hover {
-  color: #3375cc;
-}
-
-.contain-3 {
-  background-color: rgba(255, 255, 255, 0.53);
-}
-
-.btn-hero {
-  padding: 10px 15px 10px 15px;
-  border-radius: 50px;
-  border: 2px solid black;
-  color: rgb(0, 0, 0);
-  background-color: transparent;
-}
-
-.btn-hero:hover {
-  background-color: #3375cc;
-  color: white;
-  font-size: 15px;
-  transition: 500ms;
-  border-style: none;
-}
-
-/**
- * ALL STYLE
- */
 
 /* HERO SECTION */
 #slider {
@@ -642,6 +626,21 @@ body {
   }
 }
 
+/* PROFIL STYLE */
+.profil {
+  margin-top: 50px;
+  font-weight: 600;
+}
+
+.profil title {
+  color: #3375cc;
+}
+
+.tabs p {
+  padding: 10px 20px 10px 20px;
+  font-weight: 400;
+}
+
 /* FOOTER */
 
 .all-footer {
@@ -709,9 +708,40 @@ body {
   padding: 5px;
   padding-top: 25px;
 }
-/* COBA */
+
+/* RESPONSIVE MOBILE */
+
+@media (max-width: 550px) {
+  .navbar-2 {
+    padding: 20px;
+  }
+
+  #slider {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .legend {
+    display: none;
+  }
+
+  .content {
+    display: none;
+  }
+  /* PROFIL STYLE */
+  .profil {
+    width: 100%;
+  }
+}
 </style>
 
+<!-- --------- -->
+<!--ALL SCRIPT -->
+<!-- --------- -->
+
+<!-- script slide card -->
 <script>
 const prev = document.getElementById("prev-btn");
 const next = document.getElementById("next-btn");
@@ -744,7 +774,7 @@ export default {
   //meta
   head() {
     return {
-      title: "PROFIL | Kecamatan Bogor Utara",
+      title: "Kecamatan Bogor Utara",
       meta: [
         {
           hid: "og:title",
@@ -778,3 +808,4 @@ export default {
   // },
 };
 </script>
+<!-- script end -->
