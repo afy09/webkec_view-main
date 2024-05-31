@@ -18,7 +18,7 @@
 
     <div id="navbar" style="position: fixed; width: 100%; z-index: 12">
       <b-navbar toggleable="lg" class="navbar-2">
-        <b-navbar-brand href="#"
+        <b-navbar-brand href="./"
           ><img src="~/assets/img/logobogut-03.png" alt=""
         /></b-navbar-brand>
 
@@ -56,6 +56,12 @@
     </div>
 
     <!-- NAVBAR END -->
+
+    <!-- BACK TO TOP -->
+    <a href="#slider" id="myBtn" title="Go to top" style="scroll-behavior: auto"
+      ><i class="fa-solid fa-angles-up"></i
+    ></a>
+    <!-- BACK TO TOP END -->
 
     <!-- HERO SECTION -->
     <div id="slider">
@@ -140,13 +146,26 @@
     <!-- PROFIL START -->
     <div class="profil">
       <b-tabs content-class="mt-3" fill>
+        <!-- profil kecamatan -->
         <b-tab title="Profil Kecamatan" active class="tabs"
           ><p>I'm the first tab</p></b-tab
         >
-        <b-tab title="Visi dan Misi"><p>I'm the second tab</p></b-tab>
+
+        <!-- Visi dan Misi -->
+        <b-tab title="Visi dan Misi">
+          <p>I'm the second tab</p>
+        </b-tab>
+
+        <!-- Data Pejabat -->
         <b-tab title="Data Pejabat"><p>I'm the first tab</p></b-tab>
+
+        <!-- struktur organisasi -->
         <b-tab title="Struktur Organisasi"><p>I'm the first tab</p></b-tab>
+
+        <!-- Peta Wilayah -->
         <b-tab title="Peta Wilayah"><p>I'm the first tab</p></b-tab>
+
+        <!-- Data Demografi -->
         <b-tab title="Data Demografi"><p>I'm the first tab</p></b-tab>
       </b-tabs>
     </div>
@@ -199,11 +218,36 @@
 </template>
 
 <style>
-/* NAVBAR */
 body {
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
+/* BACK TO TOP  */
+#myBtn {
+  /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 9999999; /* Make sure it does not overlap */
+  border: 1px solid #3375cc; /* Remove borders */
+  /* outline: none;  */
+  background-color: rgba(0, 4, 244, 0); /* Set a background color */
+  color: #3375cc; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px 15px 10px 15px; /* Some padding */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  scroll-behavior: auto;
+}
+
+#myBtn:hover {
+  background-color: #3375cc; /* Add a dark-grey background on hover */
+  color: white;
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
 #navbar {
   color: black;
   font-weight: bold;
@@ -637,7 +681,7 @@ body {
 }
 
 .tabs p {
-  padding: 10px 20px 10px 20px;
+  padding: 10px 40px 10px 20px;
   font-weight: 400;
 }
 

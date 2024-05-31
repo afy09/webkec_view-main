@@ -28,7 +28,7 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-navbar-nav>
-              <b-nav-item href="profil" class="nav-p">Profil</b-nav-item>
+              <b-nav-item href="./profil" class="nav-p">Profil</b-nav-item>
               <b-nav-item href="#">Berita</b-nav-item>
               <b-nav-item href="#">Dokumen</b-nav-item>
               <b-nav-item href="#">Posyandu</b-nav-item>
@@ -56,6 +56,10 @@
     </div>
 
     <!-- NAVBAR END -->
+
+    <button v-show="isVisible" @click="scrollToTop" class="back-to-top">
+      ↑
+    </button>
 
     <!-- HERO SECTION -->
     <div id="slider">
@@ -136,6 +140,12 @@
       </div>
     </div>
     <!-- HERO SECTION END-->
+
+    <!-- BACK TO TOP -->
+    <a href="#slider" id="myBtn" title="Go to top" style="scroll-behavior: auto"
+      ><i class="fa-solid fa-angles-up"></i
+    ></a>
+    <!-- BACK TO TOP END -->
 
     <!-- SAMBUTAN CAMAT -->
     <div class="cam" style="margin: 120px 10px 100px 10px">
@@ -436,6 +446,30 @@ body {
   font-size: 15px;
   transition: 500ms;
   border-style: none;
+}
+
+/* BACK TO TOP  */
+#myBtn {
+  /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 9999999; /* Make sure it does not overlap */
+  border: 1px solid #3375cc; /* Remove borders */
+  /* outline: none;  */
+  background-color: rgba(0, 4, 244, 0); /* Set a background color */
+  color: #3375cc; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px 15px 10px 15px; /* Some padding */
+  border-radius: 50px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  scroll-behavior: auto;
+}
+
+#myBtn:hover {
+  background-color: #3375cc; /* Add a dark-grey background on hover */
+  color: white;
+  scroll-behavior: smooth;
 }
 
 /* HERO SECTION */
@@ -1326,6 +1360,34 @@ next.addEventListener("click", () => {
 });
 </script>
 <!-- script slide card end -->
+
+<script>
+import BackToTop from "~/components/BackToTop.vue";
+export default {
+  data() {
+    return {
+      isVisible: false,
+    };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.toggleVisibility);
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.toggleVisibility);
+  },
+  methods: {
+    toggleVisibility() {
+      this.isVisible = window.scrollY > 300;
+    },
+    scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    },
+  },
+};
+</script>
 
 <!-- script vue -->
 <script>
