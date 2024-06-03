@@ -205,20 +205,77 @@
         </b-tab>
 
         <!-- Visi dan Misi -->
-        <b-tab title="Visi dan Misi"> </b-tab>
+        <b-tab title="Visi dan Misi">
+          <h2>Visi <span>dan</span> Misi</h2>
+          <div class="vs">
+            <div class="visi">
+              <h5>Visi :</h5>
+              <p>
+                "MEWUJUDKAN BOGOR UTARA YANG UNGGUL DALAM PEMBANGUNAN DAN PRIMA
+                DALAM PELAYANAN"
+              </p>
+            </div>
+
+            <div class="misi">
+              <h5>Misi :</h5>
+              <p>
+                1. Meningkatkan kinerja aparatur pemeritahan yang berlandaskan
+                Good Governance
+              </p>
+
+              <p>2. Meningkatkan partisipasi masyarakat dalam pembangunan</p>
+
+              <p>
+                3. Mewujudkan pemukiman yang tertata baik dan berwawasan
+                lingkungan
+              </p>
+            </div>
+          </div>
+
+          <div class="vs-img">
+            <img src="~/assets/img/visimisi.png" alt="" />
+          </div>
+        </b-tab>
 
         <!-- Data Pejabat -->
-        <b-tab title="Data Pejabat"><p>I'm the first tab</p></b-tab>
+        <b-tab title="Data Pejabat">
+          <h2>Data <span>Pejabat</span></h2>
+        </b-tab>
 
         <!-- struktur organisasi -->
-        <b-tab title="Struktur Organisasi"><p>I'm the first tab</p></b-tab>
+        <b-tab title="Struktur Organisasi">
+          <h2>Struktur <span>Organisasi</span></h2>
+          <div class="img-so">
+            <img
+              src="~/assets/img/struktur_organisasi.png"
+              alt="Struktur Organisasi Gambar"
+            />
+          </div>
+        </b-tab>
 
         <!-- Peta Wilayah -->
-        <b-tab title="Peta Wilayah"><p>I'm the first tab</p></b-tab>
+        <b-tab title="Peta Wilayah">
+          <h2>Peta <span>Wilayah</span></h2>
+          <div class="all-map">
+            <div class="admin-kec-img">
+              <img
+                src="~/assets/img/peta_admin_kecbogut.png"
+                alt="Struktur Organisasi Gambar"
+              />
+            </div>
+
+            <div class="admin-kota-img">
+              <img
+                src="~/assets/img/peta_admin_kotabogor.png"
+                alt="Struktur Organisasi Gambar"
+              />
+            </div>
+          </div>
+        </b-tab>
 
         <!-- Data Demografi -->
         <b-tab title="Data Demografi">
-          <h2>Profil <span>Kecamatan</span></h2>
+          <h2>Data <span>Demografi</span></h2>
         </b-tab>
       </b-tabs>
     </div>
@@ -725,7 +782,7 @@ body {
 
 /* PROFIL STYLE */
 .profil {
-  margin-top: 50px;
+  margin-top: 30px;
   font-weight: 600;
   padding: 50px;
   /* height: 1000px; */
@@ -735,20 +792,21 @@ body {
   color: #3375cc;
 }
 
-.tabs p {
-  padding: 10px 40px 10px 20px;
-  font-weight: 400;
-}
-
 /* profil kec */
 
 .tabs h2 {
   text-align: center;
   margin-top: 50px;
+  font-size: 25px;
 }
 
 .tabs h2 span {
   color: #3375cc;
+}
+
+.tabs p {
+  padding: 10px 40px 10px 20px;
+  font-weight: 400;
 }
 
 .tabwil {
@@ -779,9 +837,52 @@ body {
 }
 
 /* visi misi  */
-.visimisi {
+
+.vs {
   display: flex;
   gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.misi p {
+  border-bottom: 1px solid black;
+}
+
+.vs-img {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* data pejabat */
+.table-pejabat {
+  width: 100%;
+}
+
+/* struktur organisasi */
+.img-so {
+  margin: 40px 200px 20px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* peta wilayah */
+.all-map {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.admin-kec-img img {
+  width: 100%;
+}
+
+.admin-kota-img img {
+  width: 100%;
 }
 
 /* FOOTER */
@@ -876,6 +977,8 @@ body {
   /* PROFIL STYLE */
   .profil {
     width: 100%;
+    margin-top: 20px;
+    padding: 30px;
   }
 
   .tabwil {
@@ -886,6 +989,25 @@ body {
 
   .table {
     width: 100%;
+  }
+
+  .vs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img-so {
+    margin: 15px 1px 1px 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .all-map {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 </style>
@@ -927,7 +1049,7 @@ export default {
   //meta
   head() {
     return {
-      title: "Kecamatan Bogor Utara",
+      title: "PROFIL | Kecamatan Bogor Utara",
       meta: [
         {
           hid: "og:title",
