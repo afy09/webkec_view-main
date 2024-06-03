@@ -143,86 +143,118 @@
     </div>
     <!-- HERO SECTION END-->
 
-    <!-- PROFIL START -->
-    <div class="profil">
+    <!-- BERITA START -->
+
+    <div class="berita">
       <b-tabs content-class="mt-3" justified>
-        <!-- profil kecamatan -->
-        <b-tab title="Profil Kecamatan" class="tabs" active>
-          <h2>Profil <span>Kecamatan</span></h2>
+        <!-- Berita Terbaru -->
+        <b-tab title="Berita Terbaru" active class="tabs">
+          <!-- CAROSEL -->
+          <div class="container">
+            <div class="carousel-view">
+              <button id="prev-btn" class="prev-btn">
+                <svg
+                  viewBox="0 0 512 512"
+                  width="20"
+                  title="chevron-circle-left"
+                >
+                  <path
+                    d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
+                  />
+                </svg>
+              </button>
+              <div id="item-list" class="item-list">
+                <div class="card-ber">
+                  <div class="card-ber-img">
+                    <img src="~/assets/img/berita1.png" alt="berita1.jpg" />
+                  </div>
+                  <p>22-10-2024</p>
+                  <h5 style="color: black"><a href="">Bangkitkan UMKM</a></h5>
+                  <p>
+                    Camat Bogor Utara, Riki Robiansah meminta seluruh lurah dan
+                    bawahannya yang bertugas di Kecamatan Bogor Utara......
+                  </p>
+                  <button>Baca Selengkapnya</button>
+                </div>
 
-          <p>
-            - Luas Wilayah Kecamatan Bogor Utara adalah 1.772 Ha dengan
-            kepadatan 88 Jiwa/Ha terdiri dari 8 Kelurahan, 108 RW dan 154 RT.
-            Adapun Kelurahan yang dimaksud :
-          </p>
+                <div class="card-ber">
+                  <div class="card-ber-img">
+                    <img src="~/assets/img/berita2.png" alt="berita1.jpg" />
+                  </div>
+                  <p>22-10-2024</p>
+                  <h5 style="color: black">
+                    <a href="">Buka Musrenbang ...</a>
+                  </h5>
+                  <p>
+                    BOGOR. Wali Kota Bogor, Bima Arya membuka secara resmi
+                    Musyawarah Rencana Pembangunan (Musrenbang) Kecamatan Bogor
+                    Utara......
+                  </p>
 
-          <div class="tabwil">
-            <div calss="table">
-              <b-table
-                striped
-                hover
-                :items="items"
-                :fields="fields"
-                outlined
-              ></b-table>
-            </div>
-            <div class="batwil">
-              <h5>Batas Wilayah Kecamatan Bogor Utara</h5>
-              <p>
-                Utara ( Desa Cimandala, Desa Pasir Jambu, Desa pasir laja Kec.
-                Sukaraja Kab. bogor )
-              </p>
+                  <button>Baca Selengkapnya</button>
+                </div>
 
-              <p>
-                Barat ( Kali Ciliwung Kel. Tnaha Sareal, Kedung Badak Kec. Tanah
-                Sareal Kota Bogor )
-              </p>
+                <div class="card-ber">
+                  <div class="card-ber-img">
+                    <img src="~/assets/img/berita3.png" alt="berita1.jpg" />
+                  </div>
+                  <p>22-10-2024</p>
+                  <h5 style="color: black">
+                    <a href="">Gelar operasi PA di...</a>
+                  </h5>
+                  <p>
+                    Operasi pasar dilakukan Kecamatan Bogor Utara, Kota Bogor
+                    pada hari Jumat (14/01/2022). Operasi pasar tersebut
+                    dilakukan di halaman Kantor Kec......
+                  </p>
 
-              <p>
-                Timur (Kel. Katulampa Kec. Bogor Timur, Desa Sukaraja, Desa
-                Cadas Ngampar Kec. Sukaraja Kab. Bogor )
-              </p>
+                  <button>Baca Selengkapnya</button>
+                </div>
 
-              <p>Selatan ( Kel. Babakan, Kel. Tegallega Kec. Bogor Tengah )</p>
-
-              <h5 class="inov">Inovasi Kecamatan Bogor Utara diantaranya :</h5>
-              <p>
-                1. Pelayanan Ekstra Kecamatan Bogor Utara Dimana pada Hari Rabu
-                18.00 - 21.00 WIB dan Sabtu 08.00 - 12.00 WIB Pelayanan
-                Administrasi Kependudukan dibuka
-              </p>
-              <p>
-                2. Pelayanan Satu Pintu Kecamatan Bogor Utara Dicetus dengan ide
-                kreatif sesuai dengan keadaan Masyarakat Kecamatan Bogor Utara.
-                Camat Bogor Utara melakukan sebuah inovasi Pelayanan dimana
-                setiap pelayanan administrasi kependudukan bisa melalui
-                kelurahan dan untuk tanda tangan atau pengesahan Camat Bogor
-                Utara maka bisa menunggu di Kelurahan di Wilyaha Kecamatan Bogor
-                Utara.,x
-              </p>
+                <div class="card-ber">
+                  <div class="card-ber-img">
+                    <img src="~/assets/img/berita4.png" alt="berita4.jpg" />
+                  </div>
+                  <p>22-10-2024</p>
+                  <h5 style="color: black">
+                    <a href="">Bogor si asyik ...</a>
+                  </h5>
+                  <p>
+                    Wali Kota Bogor, Bima Arya mengapresiasi Sistem Informasi
+                    Analisis Potensi dan Permasalahan Kecamatan......
+                  </p>
+                  <button>Baca Selengkapnya</button>
+                </div>
+              </div>
+              <button id="next-btn" class="next-btn">
+                <svg
+                  viewBox="0 0 512 512"
+                  width="20"
+                  title="chevron-circle-right"
+                >
+                  <path
+                    d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
+                  />
+                </svg>
+              </button>
             </div>
           </div>
+          <!-- CAROSEL END -->
         </b-tab>
 
-        <!-- Visi dan Misi -->
-        <b-tab title="Visi dan Misi"> </b-tab>
+        <!-- Berita Kota -->
+        <b-tab title="Berita Kota">
+          <h5 style="text-align: center">Tidak ada berita</h5>
+        </b-tab>
 
-        <!-- Data Pejabat -->
-        <b-tab title="Data Pejabat"><p>I'm the first tab</p></b-tab>
-
-        <!-- struktur organisasi -->
-        <b-tab title="Struktur Organisasi"><p>I'm the first tab</p></b-tab>
-
-        <!-- Peta Wilayah -->
-        <b-tab title="Peta Wilayah"><p>I'm the first tab</p></b-tab>
-
-        <!-- Data Demografi -->
-        <b-tab title="Data Demografi">
-          <h2>Profil <span>Kecamatan</span></h2>
+        <!-- Berita Wilayah -->
+        <b-tab title="Berita Wilayah">
+          <h5 style="text-align: center">Tidak ada berita</h5>
         </b-tab>
       </b-tabs>
     </div>
-    <!-- PROFIL START END -->
+
+    <!-- BERITA END -->
 
     <!-- FOOTHER -->
     <footer>
@@ -723,15 +755,13 @@ body {
   }
 }
 
-/* PROFIL STYLE */
-.profil {
+/* Berita STYLE */
+.berita {
   margin-top: 50px;
   font-weight: 600;
-  padding: 50px;
-  /* height: 1000px; */
 }
 
-.profil title {
+.berita title {
   color: #3375cc;
 }
 
@@ -740,52 +770,109 @@ body {
   font-weight: 400;
 }
 
-/* profil kec */
+/* corasel */
 
-.tabs h2 {
-  text-align: center;
-  margin-top: 50px;
+button {
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: none;
+  transition: all 0.3s ease-in-out;
 }
 
-.tabs h2 span {
-  color: #3375cc;
-}
-
-.tabwil {
-  font-family: arial, sans-serif;
-  /* border-collapse: collapse; */
-  text-align: center;
+.container {
+  width: 100%;
+  height: auto;
+  margin-top: 30px;
+  padding: 10px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  /* background-color: white; */
 }
 
-.table {
-  width: 400px;
-}
-
-.batwil h5 {
-  text-align: center;
-  margin-bottom: 7px;
-}
-
-.batwil p {
-  border-bottom: 1px solid black;
-  text-align: start;
-}
-
-.inov {
-  margin-top: 50px;
-}
-
-/* visi misi  */
-.visimisi {
+.carousel-view {
   display: flex;
-  gap: 15px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  /* padding: 100px 0; */
+  transition: all 0.25s ease-in;
+}
+
+.carousel-view .item-list {
+  max-width: 950px;
+  width: auto;
+  /* padding: 10px; */
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  scroll-behavior: smooth;
+  transition: all 0.25s ease-in;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  overflow: auto;
+  scroll-snap-type: x mandatory;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.item-list::-webkit-scrollbar {
+  display: none;
+}
+
+.prev-btn {
+  background: none;
+  cursor: pointer;
+}
+
+.next-btn {
+  cursor: pointer;
+}
+
+.card-ber {
+  scroll-snap-align: center;
+  min-width: 300px;
+  height: auto;
+  padding: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
+  border-radius: 20px;
+  margin: 10px;
+  background-color: white;
+}
+.card-ber p {
+  font-size: 12px;
+}
+
+.card-ber h5 a {
+  color: black;
+}
+
+.card-ber h5 a:hover {
+  color: #3575cc;
+}
+
+.card-ber button {
+  border-style: none;
+  padding: 10px;
+  border-radius: 50px;
+  color: white;
+  background-color: #3575cc;
+  font-size: 12px;
+}
+
+.card-ber button:hover {
+  background-color: #0d1f38;
+  color: white;
+  padding: 15px;
+  transition-duration: 500ms;
+}
+
+.card-ber-img img {
+  width: 100%;
+  height: 190px;
 }
 
 /* FOOTER */
-
 .all-footer {
   background-color: rgb(20, 18, 26);
   margin-top: 80px;
@@ -874,18 +961,25 @@ body {
     display: none;
   }
   /* PROFIL STYLE */
-  .profil {
+  .berita {
     width: 100%;
   }
 
-  .tabwil {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  /* KATBER MOBILE */
+  .kat-ber h2 {
+    font-size: 25px;
+    margin-top: -30px;
   }
 
-  .table {
-    width: 100%;
+  .kat-btn {
+    font-size: 13px;
+  }
+
+  .carousel-view .item-list {
+    max-width: 270px;
+  }
+  .card-ber {
+    min-width: 250px;
   }
 }
 </style>
@@ -927,7 +1021,7 @@ export default {
   //meta
   head() {
     return {
-      title: "Kecamatan Bogor Utara",
+      title: "Berita | Kecamatan Bogor Utara",
       meta: [
         {
           hid: "og:title",
@@ -943,55 +1037,6 @@ export default {
           hid: "og:image",
           name: "og:image",
           content: "https://i.imgur.com/xKOCz0P.png",
-        },
-      ],
-    };
-  },
-
-  data() {
-    return {
-      // Note `isActive` is left out and will not appear in the rendered table
-      fields: ["No", "Nama_Kelurahan"],
-      items: [
-        {
-          isActive: true,
-          No: "1",
-          Nama_Kelurahan: "Bantar Jati",
-        },
-        {
-          isActive: true,
-          No: "2",
-          Nama_Kelurahan: "Cibuluh",
-        },
-        {
-          isActive: true,
-          No: "3",
-          Nama_Kelurahan: "Tanah Baru",
-        },
-        {
-          isActive: true,
-          No: "4",
-          Nama_Kelurahan: "Kedung Halang",
-        },
-        {
-          isActive: true,
-          No: "5",
-          Nama_Kelurahan: "Cipairgi",
-        },
-        {
-          isActive: true,
-          No: "6",
-          Nama_Kelurahan: "Tegal Gundil",
-        },
-        {
-          isActive: true,
-          No: "7",
-          Nama_Kelurahan: "Cimahpar",
-        },
-        {
-          isActive: true,
-          No: "8",
-          Nama_Kelurahan: "Ciluar",
         },
       ],
     };

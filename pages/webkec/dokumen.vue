@@ -143,87 +143,6 @@
     </div>
     <!-- HERO SECTION END-->
 
-    <!-- PROFIL START -->
-    <div class="profil">
-      <b-tabs content-class="mt-3" justified>
-        <!-- profil kecamatan -->
-        <b-tab title="Profil Kecamatan" class="tabs" active>
-          <h2>Profil <span>Kecamatan</span></h2>
-
-          <p>
-            - Luas Wilayah Kecamatan Bogor Utara adalah 1.772 Ha dengan
-            kepadatan 88 Jiwa/Ha terdiri dari 8 Kelurahan, 108 RW dan 154 RT.
-            Adapun Kelurahan yang dimaksud :
-          </p>
-
-          <div class="tabwil">
-            <div calss="table">
-              <b-table
-                striped
-                hover
-                :items="items"
-                :fields="fields"
-                outlined
-              ></b-table>
-            </div>
-            <div class="batwil">
-              <h5>Batas Wilayah Kecamatan Bogor Utara</h5>
-              <p>
-                Utara ( Desa Cimandala, Desa Pasir Jambu, Desa pasir laja Kec.
-                Sukaraja Kab. bogor )
-              </p>
-
-              <p>
-                Barat ( Kali Ciliwung Kel. Tnaha Sareal, Kedung Badak Kec. Tanah
-                Sareal Kota Bogor )
-              </p>
-
-              <p>
-                Timur (Kel. Katulampa Kec. Bogor Timur, Desa Sukaraja, Desa
-                Cadas Ngampar Kec. Sukaraja Kab. Bogor )
-              </p>
-
-              <p>Selatan ( Kel. Babakan, Kel. Tegallega Kec. Bogor Tengah )</p>
-
-              <h5 class="inov">Inovasi Kecamatan Bogor Utara diantaranya :</h5>
-              <p>
-                1. Pelayanan Ekstra Kecamatan Bogor Utara Dimana pada Hari Rabu
-                18.00 - 21.00 WIB dan Sabtu 08.00 - 12.00 WIB Pelayanan
-                Administrasi Kependudukan dibuka
-              </p>
-              <p>
-                2. Pelayanan Satu Pintu Kecamatan Bogor Utara Dicetus dengan ide
-                kreatif sesuai dengan keadaan Masyarakat Kecamatan Bogor Utara.
-                Camat Bogor Utara melakukan sebuah inovasi Pelayanan dimana
-                setiap pelayanan administrasi kependudukan bisa melalui
-                kelurahan dan untuk tanda tangan atau pengesahan Camat Bogor
-                Utara maka bisa menunggu di Kelurahan di Wilyaha Kecamatan Bogor
-                Utara.,x
-              </p>
-            </div>
-          </div>
-        </b-tab>
-
-        <!-- Visi dan Misi -->
-        <b-tab title="Visi dan Misi"> </b-tab>
-
-        <!-- Data Pejabat -->
-        <b-tab title="Data Pejabat"><p>I'm the first tab</p></b-tab>
-
-        <!-- struktur organisasi -->
-        <b-tab title="Struktur Organisasi"><p>I'm the first tab</p></b-tab>
-
-        <!-- Peta Wilayah -->
-        <b-tab title="Peta Wilayah"><p>I'm the first tab</p></b-tab>
-
-        <!-- Data Demografi -->
-        <b-tab title="Data Demografi">
-          <h2>Profil <span>Kecamatan</span></h2>
-        </b-tab>
-      </b-tabs>
-    </div>
-    <!-- PROFIL START END -->
-
     <!-- FOOTHER -->
     <footer>
       <div class="all-footer">
@@ -723,69 +642,7 @@ body {
   }
 }
 
-/* PROFIL STYLE */
-.profil {
-  margin-top: 50px;
-  font-weight: 600;
-  padding: 50px;
-  /* height: 1000px; */
-}
-
-.profil title {
-  color: #3375cc;
-}
-
-.tabs p {
-  padding: 10px 40px 10px 20px;
-  font-weight: 400;
-}
-
-/* profil kec */
-
-.tabs h2 {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.tabs h2 span {
-  color: #3375cc;
-}
-
-.tabwil {
-  font-family: arial, sans-serif;
-  /* border-collapse: collapse; */
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.table {
-  width: 400px;
-}
-
-.batwil h5 {
-  text-align: center;
-  margin-bottom: 7px;
-}
-
-.batwil p {
-  border-bottom: 1px solid black;
-  text-align: start;
-}
-
-.inov {
-  margin-top: 50px;
-}
-
-/* visi misi  */
-.visimisi {
-  display: flex;
-  gap: 15px;
-}
-
 /* FOOTER */
-
 .all-footer {
   background-color: rgb(20, 18, 26);
   margin-top: 80px;
@@ -874,17 +731,7 @@ body {
     display: none;
   }
   /* PROFIL STYLE */
-  .profil {
-    width: 100%;
-  }
-
-  .tabwil {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .table {
+  .berita {
     width: 100%;
   }
 }
@@ -927,7 +774,7 @@ export default {
   //meta
   head() {
     return {
-      title: "Kecamatan Bogor Utara",
+      title: "Berita | Kecamatan Bogor Utara",
       meta: [
         {
           hid: "og:title",
@@ -943,55 +790,6 @@ export default {
           hid: "og:image",
           name: "og:image",
           content: "https://i.imgur.com/xKOCz0P.png",
-        },
-      ],
-    };
-  },
-
-  data() {
-    return {
-      // Note `isActive` is left out and will not appear in the rendered table
-      fields: ["No", "Nama_Kelurahan"],
-      items: [
-        {
-          isActive: true,
-          No: "1",
-          Nama_Kelurahan: "Bantar Jati",
-        },
-        {
-          isActive: true,
-          No: "2",
-          Nama_Kelurahan: "Cibuluh",
-        },
-        {
-          isActive: true,
-          No: "3",
-          Nama_Kelurahan: "Tanah Baru",
-        },
-        {
-          isActive: true,
-          No: "4",
-          Nama_Kelurahan: "Kedung Halang",
-        },
-        {
-          isActive: true,
-          No: "5",
-          Nama_Kelurahan: "Cipairgi",
-        },
-        {
-          isActive: true,
-          No: "6",
-          Nama_Kelurahan: "Tegal Gundil",
-        },
-        {
-          isActive: true,
-          No: "7",
-          Nama_Kelurahan: "Cimahpar",
-        },
-        {
-          isActive: true,
-          No: "8",
-          Nama_Kelurahan: "Ciluar",
         },
       ],
     };

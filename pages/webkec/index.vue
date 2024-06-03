@@ -18,8 +18,8 @@
 
     <div id="navbar" style="position: fixed; width: 100%; z-index: 12">
       <b-navbar toggleable="lg" class="navbar-2">
-        <b-navbar-brand href="#"
-          ><img src="~/assets/img/logobogut-03.png" alt=""
+        <b-navbar-brand href=""
+          ><img src="~/assets/img/logokecc.png" alt=""
         /></b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -28,12 +28,12 @@
           <!-- Right aligned nav items -->
           <b-navbar-nav class="ml-auto">
             <b-navbar-nav>
-              <b-nav-item href="./profil" class="nav-p">Profil</b-nav-item>
-              <b-nav-item href="#">Berita</b-nav-item>
-              <b-nav-item href="#">Dokumen</b-nav-item>
-              <b-nav-item href="#">Posyandu</b-nav-item>
-              <b-nav-item href="#">Kontak</b-nav-item>
-              <b-nav-item href="#">Galeri</b-nav-item>
+              <b-nav-item href="profil" class="nav-p">Profil</b-nav-item>
+              <b-nav-item href="berita">Berita</b-nav-item>
+              <b-nav-item href="dokumen">Dokumen</b-nav-item>
+              <b-nav-item href="posyandu">Posyandu</b-nav-item>
+              <b-nav-item href="kontak">Kontak</b-nav-item>
+              <b-nav-item href="galeri">Galeri</b-nav-item>
             </b-navbar-nav>
 
             <b-nav-item-dropdown right>
@@ -124,7 +124,7 @@
             </div>
           </div>
           <div class="image">
-            <img src="~/assets/img/BG2-KECAMATAN-01.jpg" />
+            <img src="~/assets/img/banner6.jpeg" />
           </div>
         </div>
       </div>
