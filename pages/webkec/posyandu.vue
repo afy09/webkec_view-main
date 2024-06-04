@@ -142,119 +142,6 @@
     </div>
     <!-- HERO SECTION END-->
 
-    <!-- BERITA START -->
-
-    <div class="berita">
-      <b-tabs content-class="mt-3" justified>
-        <!-- Berita Terbaru -->
-        <b-tab title="Berita Terbaru" active class="tabs">
-          <!-- CAROSEL -->
-          <div class="container">
-            <div class="carousel-view">
-              <button id="prev-btn" class="prev-btn">
-                <svg
-                  viewBox="0 0 512 512"
-                  width="20"
-                  title="chevron-circle-left"
-                >
-                  <path
-                    d="M256 504C119 504 8 393 8 256S119 8 256 8s248 111 248 248-111 248-248 248zM142.1 273l135.5 135.5c9.4 9.4 24.6 9.4 33.9 0l17-17c9.4-9.4 9.4-24.6 0-33.9L226.9 256l101.6-101.6c9.4-9.4 9.4-24.6 0-33.9l-17-17c-9.4-9.4-24.6-9.4-33.9 0L142.1 239c-9.4 9.4-9.4 24.6 0 34z"
-                  />
-                </svg>
-              </button>
-              <div id="item-list" class="item-list">
-                <div class="card-ber">
-                  <div class="card-ber-img">
-                    <img src="~/assets/img/berita1.png" alt="berita1.jpg" />
-                  </div>
-                  <p>22-10-2024</p>
-                  <h5 style="color: black"><a href="">Bangkitkan UMKM</a></h5>
-                  <p>
-                    Camat Bogor Utara, Riki Robiansah meminta seluruh lurah dan
-                    bawahannya yang bertugas di Kecamatan Bogor Utara......
-                  </p>
-                  <button>Baca Selengkapnya</button>
-                </div>
-
-                <div class="card-ber">
-                  <div class="card-ber-img">
-                    <img src="~/assets/img/berita2.png" alt="berita1.jpg" />
-                  </div>
-                  <p>22-10-2024</p>
-                  <h5 style="color: black">
-                    <a href="">Buka Musrenbang ...</a>
-                  </h5>
-                  <p>
-                    BOGOR. Wali Kota Bogor, Bima Arya membuka secara resmi
-                    Musyawarah Rencana Pembangunan (Musrenbang) Kecamatan Bogor
-                    Utara......
-                  </p>
-
-                  <button>Baca Selengkapnya</button>
-                </div>
-
-                <div class="card-ber">
-                  <div class="card-ber-img">
-                    <img src="~/assets/img/berita3.png" alt="berita1.jpg" />
-                  </div>
-                  <p>22-10-2024</p>
-                  <h5 style="color: black">
-                    <a href="">Gelar operasi PA di...</a>
-                  </h5>
-                  <p>
-                    Operasi pasar dilakukan Kecamatan Bogor Utara, Kota Bogor
-                    pada hari Jumat (14/01/2022). Operasi pasar tersebut
-                    dilakukan di halaman Kantor Kec......
-                  </p>
-
-                  <button>Baca Selengkapnya</button>
-                </div>
-
-                <div class="card-ber">
-                  <div class="card-ber-img">
-                    <img src="~/assets/img/berita4.png" alt="berita4.jpg" />
-                  </div>
-                  <p>22-10-2024</p>
-                  <h5 style="color: black">
-                    <a href="">Bogor si asyik ...</a>
-                  </h5>
-                  <p>
-                    Wali Kota Bogor, Bima Arya mengapresiasi Sistem Informasi
-                    Analisis Potensi dan Permasalahan Kecamatan......
-                  </p>
-                  <button>Baca Selengkapnya</button>
-                </div>
-              </div>
-              <button id="next-btn" class="next-btn">
-                <svg
-                  viewBox="0 0 512 512"
-                  width="20"
-                  title="chevron-circle-right"
-                >
-                  <path
-                    d="M256 8c137 0 248 111 248 248S393 504 256 504 8 393 8 256 119 8 256 8zm113.9 231L234.4 103.5c-9.4-9.4-24.6-9.4-33.9 0l-17 17c-9.4 9.4-9.4 24.6 0 33.9L285.1 256 183.5 357.6c-9.4 9.4-9.4 24.6 0 33.9l17 17c9.4 9.4 24.6 9.4 33.9 0L369.9 273c9.4-9.4 9.4-24.6 0-34z"
-                  />
-                </svg>
-              </button>
-            </div>
-          </div>
-          <!-- CAROSEL END -->
-        </b-tab>
-
-        <!-- Berita Kota -->
-        <b-tab title="Berita Kota">
-          <h5 style="text-align: center">Tidak ada berita</h5>
-        </b-tab>
-
-        <!-- Berita Wilayah -->
-        <b-tab title="Berita Wilayah">
-          <h5 style="text-align: center">Tidak ada berita</h5>
-        </b-tab>
-      </b-tabs>
-    </div>
-
-    <!-- BERITA END -->
-
     <!-- FOOTHER -->
     <footer>
       <div class="all-footer">
@@ -433,14 +320,14 @@ body {
 }
 
 /* .content-txt h3 {
-  text-transform: uppercase;
-  font-size: 18px;
-  color: black;
-  text-align: left;
-  margin-left: 30px;
-  padding-bottom: 10px;
-  font-weight: bold;
-} */
+    text-transform: uppercase;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    margin-left: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+  } */
 
 .content-txt p {
   font-weight: normal;
@@ -754,123 +641,6 @@ body {
   }
 }
 
-/* Berita STYLE */
-.berita {
-  margin-top: 50px;
-  font-weight: 600;
-}
-
-.berita title {
-  color: #3375cc;
-}
-
-.tabs p {
-  padding: 10px 40px 10px 20px;
-  font-weight: 400;
-}
-
-/* corasel */
-
-button {
-  border: none;
-  cursor: pointer;
-  color: white;
-  background: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.container {
-  width: 100%;
-  height: auto;
-  margin-top: 30px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background-color: white; */
-}
-
-.carousel-view {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  /* padding: 100px 0; */
-  transition: all 0.25s ease-in;
-}
-
-.carousel-view .item-list {
-  max-width: 950px;
-  width: auto;
-  /* padding: 10px; */
-  display: flex;
-  gap: 20px;
-  text-align: center;
-  scroll-behavior: smooth;
-  transition: all 0.25s ease-in;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-  overflow: auto;
-  scroll-snap-type: x mandatory;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.item-list::-webkit-scrollbar {
-  display: none;
-}
-
-.prev-btn {
-  background: none;
-  cursor: pointer;
-}
-
-.next-btn {
-  cursor: pointer;
-}
-
-.card-ber {
-  scroll-snap-align: center;
-  min-width: 300px;
-  height: auto;
-  padding: 20px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
-  border-radius: 20px;
-  margin: 10px;
-  background-color: white;
-}
-.card-ber p {
-  font-size: 12px;
-}
-
-.card-ber h5 a {
-  color: black;
-}
-
-.card-ber h5 a:hover {
-  color: #3575cc;
-}
-
-.card-ber button {
-  border-style: none;
-  padding: 10px;
-  border-radius: 50px;
-  color: white;
-  background-color: #3575cc;
-  font-size: 12px;
-}
-
-.card-ber button:hover {
-  background-color: #0d1f38;
-  color: white;
-  padding: 15px;
-  transition-duration: 500ms;
-}
-
-.card-ber-img img {
-  width: 100%;
-  height: 190px;
-}
-
 /* FOOTER */
 .all-footer {
   background-color: rgb(20, 18, 26);
@@ -959,26 +729,10 @@ button {
   .content {
     display: none;
   }
-  /* PROFIL STYLE */
+
+  /* POSYANDU STYLE */
   .berita {
     width: 100%;
-  }
-
-  /* KATBER MOBILE */
-  .kat-ber h2 {
-    font-size: 25px;
-    margin-top: -30px;
-  }
-
-  .kat-btn {
-    font-size: 13px;
-  }
-
-  .carousel-view .item-list {
-    max-width: 270px;
-  }
-  .card-ber {
-    min-width: 250px;
   }
 }
 </style>
@@ -1020,7 +774,7 @@ export default {
   //meta
   head() {
     return {
-      title: "BERITA | Kecamatan Bogor Utara",
+      title: "POSYANDU | Kecamatan Bogor Utara",
       meta: [
         {
           hid: "og:title",
