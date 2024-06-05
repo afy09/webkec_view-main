@@ -32,7 +32,6 @@
               <b-nav-item href="berita">Berita</b-nav-item>
               <b-nav-item href="dokumen">Dokumen</b-nav-item>
               <b-nav-item href="posyandu">Posyandu</b-nav-item>
-              <b-nav-item href="kontak">Kontak</b-nav-item>
               <b-nav-item href="galeri">Galeri</b-nav-item>
             </b-navbar-nav>
 
@@ -142,6 +141,112 @@
       </div>
     </div>
     <!-- HERO SECTION END-->
+
+    <!-- TITLE -->
+    <div class="title">
+      <h3>DOKU<span>MEN</span></h3>
+    </div>
+    <!-- TITLE END -->
+
+    <!-- DOKUMEN START -->
+    <div class="dokumen">
+      <div class="dok-content">
+        <div>
+          <div class="dok-date" style="display: flex; gap: 10px">
+            <i class="fa-regular fa-calendar-days fa-lg"></i>
+            <p>June 04, 2023</p>
+          </div>
+          <div class="dok-title">
+            <a href="#">Laporan Tindak lanjut hasil LHE Tahun 2023</a>
+          </div>
+        </div>
+
+        <div class="dok-install">
+          <a href="#"><i class="fa-solid fa-download fa-xl"></i></a>
+        </div>
+      </div>
+
+      <div class="dok-content">
+        <div>
+          <div class="dok-date" style="display: flex; gap: 10px">
+            <i class="fa-regular fa-calendar-days fa-lg"></i>
+            <p>June 05, 2023</p>
+          </div>
+          <div class="dok-title">
+            <a href="#">Perjanjian Kinerja Tahun 2024</a>
+          </div>
+        </div>
+
+        <div class="dok-install">
+          <a href="#"><i class="fa-solid fa-download fa-xl"></i></a>
+        </div>
+      </div>
+
+      <div class="dok-content">
+        <div>
+          <div class="dok-date" style="display: flex; gap: 10px">
+            <i class="fa-regular fa-calendar-days fa-lg"></i>
+            <p>May 04, 2023</p>
+          </div>
+          <div class="dok-title">
+            <a href="#">Renja Tahun 2024</a>
+          </div>
+        </div>
+
+        <div class="dok-install">
+          <a href="#"><i class="fa-solid fa-download fa-xl"></i></a>
+        </div>
+      </div>
+
+      <div class="dok-content">
+        <div>
+          <div class="dok-date" style="display: flex; gap: 10px">
+            <i class="fa-regular fa-calendar-days fa-lg"></i>
+            <p>June 04, 2023</p>
+          </div>
+          <div class="dok-title">
+            <a href="#">LKIP Tahun 2023</a>
+          </div>
+        </div>
+
+        <div class="dok-install">
+          <a href="#"><i class="fa-solid fa-download fa-xl"></i></a>
+        </div>
+      </div>
+
+      <div class="dok-content">
+        <div>
+          <div class="dok-date" style="display: flex; gap: 10px">
+            <i class="fa-regular fa-calendar-days fa-lg"></i>
+            <p>June 04, 2023</p>
+          </div>
+          <div class="dok-title">
+            <a href="#">DOKUMEN LAKIP 2022</a>
+          </div>
+        </div>
+
+        <div class="dok-install">
+          <a href="#"><i class="fa-solid fa-download fa-xl"></i></a>
+        </div>
+      </div>
+
+      <div class="dok-content">
+        <div>
+          <div class="dok-date" style="display: flex; gap: 10px">
+            <i class="fa-regular fa-calendar-days fa-lg"></i>
+            <p>June 04, 2023</p>
+          </div>
+          <div class="dok-title">
+            <a href="#">Laporan Survey Kepuasan Masyarakat (SKM)</a>
+          </div>
+        </div>
+
+        <div class="dok-install">
+          <a href="#"><i class="fa-solid fa-download fa-xl"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- DOKUMEN START END -->
 
     <!-- FOOTHER -->
     <footer>
@@ -642,6 +747,83 @@ body {
   }
 }
 
+/* TITLE */
+.title h3 {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.title h3 span {
+  color: #3375cc;
+  border-bottom: 2px solid black;
+}
+
+/* DOKUMEN  */
+.dokumen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.dok-content {
+  background-color: #f3eded;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 25px;
+}
+
+.dok-date {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.dok-date i {
+  color: #3375cc;
+}
+
+.dok-date p {
+  color: gray;
+  margin-top: -10px;
+}
+
+.dok-title {
+  width: 250px;
+}
+
+.dok-title a {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.dok-title a:hover {
+  color: #3375cc;
+}
+
+.dok-title:hover {
+  color: #3375cc;
+}
+
+.dok-install {
+  background-color: white;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+.dok-install a {
+  color: #3375cc;
+  font-size: 25px;
+}
+
+.dok-install a:hover {
+  color: black;
+}
+
 /* FOOTER */
 .all-footer {
   background-color: rgb(20, 18, 26);
@@ -730,9 +912,35 @@ body {
   .content {
     display: none;
   }
-  /* PROFIL STYLE */
-  .berita {
+  /* DOKUMEN STYLE */
+  .title h3 {
+    font-size: 20px;
+  }
+
+  .dokumen {
+    padding: 20px;
+    /* width: 100%; */
+  }
+
+  .dok-content {
     width: 100%;
+  }
+
+  .dok-title {
+    width: 200px;
+  }
+
+  .dok-date i,
+  p {
+    font-size: 12px;
+  }
+
+  .dok-title a {
+    font-size: 18px;
+  }
+
+  .dok-install a {
+    font-size: 18px;
   }
 }
 </style>
@@ -774,7 +982,7 @@ export default {
   //meta
   head() {
     return {
-      title: "Berita | Kecamatan Bogor Utara",
+      title: "DOKUMEN | Kecamatan Bogor Utara",
       meta: [
         {
           hid: "og:title",

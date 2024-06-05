@@ -32,7 +32,6 @@
               <b-nav-item href="berita">Berita</b-nav-item>
               <b-nav-item href="dokumen">Dokumen</b-nav-item>
               <b-nav-item href="posyandu">Posyandu</b-nav-item>
-              <b-nav-item href="kontak">Kontak</b-nav-item>
               <b-nav-item href="galeri">Galeri</b-nav-item>
             </b-navbar-nav>
 

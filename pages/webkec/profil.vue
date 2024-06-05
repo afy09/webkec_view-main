@@ -32,7 +32,6 @@
               <b-nav-item href="berita">Berita</b-nav-item>
               <b-nav-item href="dokumen">Dokumen</b-nav-item>
               <b-nav-item href="posyandu">Posyandu</b-nav-item>
-              <b-nav-item href="kontak">Kontak</b-nav-item>
               <b-nav-item href="galeri">Galeri</b-nav-item>
             </b-navbar-nav>
 
@@ -239,7 +238,10 @@
 
         <!-- Data Pejabat -->
         <b-tab title="Data Pejabat">
-          <h2>Data <span>Pejabat</span></h2>
+          <!-- <h2>Data <span>Pejabat</span></h2> -->
+          <div class="datapejabat-img">
+            <img src="~/assets/img/daftarpejabat.png" alt="daftarpejabat." />
+          </div>
         </b-tab>
 
         <!-- struktur organisasi -->
@@ -276,6 +278,31 @@
         <!-- Data Demografi -->
         <b-tab title="Data Demografi">
           <h2>Data <span>Demografi</span></h2>
+          <p style="font-weight: bold">Data Jumlah Penduduk :</p>
+
+          <p>Total Jumlah Penduduk (Per RT, RW) :</p>
+
+          <p>
+            JUMLAH RT DAN RW PERKELURAHAN SE KECAMATAN KOTA BOGOR UTARA TAHUN
+            2019
+          </p>
+
+          <p>
+            Berdasarkan laporan bulanan kependudukan, jumlah penduduk Kecamatan
+            Bogor Utara adalah 36.678 Kepala Keluarga, terdiri dari 152.973 jiwa
+            dengan perincian sebagai berikut :
+          </p>
+
+          <!-- <div style="display: flex;">
+            <div>
+
+            </div>
+            <div></div>
+          </div> -->
+
+          <div>
+            <b-table striped hover outlined :items="daftar"></b-table>
+          </div>
         </b-tab>
       </b-tabs>
     </div>
@@ -857,8 +884,12 @@ body {
 }
 
 /* data pejabat */
-.table-pejabat {
+.datapejabat-img img {
+  margin-top: 20px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* struktur organisasi */
@@ -1016,6 +1047,21 @@ body {
 <!--ALL SCRIPT -->
 <!-- --------- -->
 
+<script>
+export default {
+  data() {
+    return {
+      daftar: [
+        { age: 40, first_name: "Dickerson", last_name: "Macdonald" },
+        { age: 21, first_name: "Larsen", last_name: "Shaw" },
+        { age: 89, first_name: "Geneva", last_name: "Wilson" },
+        { age: 38, first_name: "Jami", last_name: "Carney" },
+      ],
+    };
+  },
+};
+</script>
+
 <!-- script slide card -->
 <script>
 const prev = document.getElementById("prev-btn");
@@ -1118,6 +1164,17 @@ export default {
       ],
     };
   },
+
+  // data() {
+  //   return {
+  //     daftar: [
+  //       { age: 40, first_name: "Dickerson", last_name: "Macdonald" },
+  //       { age: 21, first_name: "Larsen", last_name: "Shaw" },
+  //       { age: 89, first_name: "Geneva", last_name: "Wilson" },
+  //       { age: 38, first_name: "Jami", last_name: "Carney" },
+  //     ],
+  //   };
+  // },
 
   // data() {
   //   return {
