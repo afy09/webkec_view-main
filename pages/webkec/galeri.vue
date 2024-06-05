@@ -149,19 +149,70 @@
         <!-- Galeri Foto -->
         <b-tab title="Galeri Foto">
           <h2>Album <span>Foto</span></h2>
-          <div class="album">
-            <div class="album-img">
-              <a href="#"
-                ><img src="~assets/img/galeri/surkenfest.png" alt=""
-              /></a>
-            </div>
-            <div class="album-content">
-              <h5>Surken Fest</h5>
-              <div calss="album-content-date">
-                <div>
-                  <i class="fa-regular fa-calendar-days fa-lg"></i>
+          <div class="galeri-foto">
+            <div class="album">
+              <div class="album-img">
+                <a href="#"
+                  ><img src="~assets/img/galeri/surkenfest.png" alt=""
+                /></a>
+              </div>
+              <div class="album-content">
+                <h5>Surken Fest</h5>
+                <div class="album-content-date">
+                  <i class="fa-regular fa-calendar-days fa-sm"></i>
+
+                  <p>7 Maret 2024</p>
                 </div>
-                <div>
+              </div>
+            </div>
+
+            <div class="album">
+              <div class="album-img">
+                <a href="#"
+                  ><img src="~assets/img/galeri/cimahparmenggambar.png" alt=""
+                /></a>
+              </div>
+              <div class="album-content">
+                <h5>Cimahpar Menggambar</h5>
+                <div class="album-content-date">
+                  <i class="fa-regular fa-calendar-days fa-sm"></i>
+
+                  <p>7 Maret 2024</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="album">
+              <div class="album-img">
+                <a href="#"
+                  ><img
+                    src="~assets/img/galeri/alatdeteks banjir.png"
+                    alt="alat detek banjir"
+                /></a>
+              </div>
+              <div class="album-content">
+                <h5>Alat Detek Banjir</h5>
+                <div class="album-content-date">
+                  <i class="fa-regular fa-calendar-days fa-sm"></i>
+
+                  <p>7 Maret 2024</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="album">
+              <div class="album-img">
+                <a href="#"
+                  ><img
+                    src="~assets/img/galeri/rapatodfkec.png"
+                    alt="Rapat ODF"
+                /></a>
+              </div>
+              <div class="album-content">
+                <h5>Rapat ODF</h5>
+                <div class="album-content-date">
+                  <i class="fa-regular fa-calendar-days fa-sm"></i>
+
                   <p>7 Maret 2024</p>
                 </div>
               </div>
@@ -171,7 +222,7 @@
 
         <!-- Galeri Vidio -->
         <b-tab title="Galeri Vidio">
-          <h5 style="text-align: center">Tidak ada berita</h5>
+          <h5 style="text-align: center">Tidak ada vidio</h5>
         </b-tab>
       </b-tabs>
     </div>
@@ -683,14 +734,14 @@ body {
   font-weight: 600;
 }
 
-.berita title {
+/* .berita title {
   color: #3375cc;
-}
+} */
 
-.tabs p {
+/* .tabs p {
   padding: 10px 40px 10px 20px;
   font-weight: 400;
-}
+} */
 
 /* Galeri Foto */
 .galeri h2 {
@@ -706,6 +757,14 @@ body {
   border-bottom: 2px solid #3375cc;
 }
 
+.galeri-foto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
 .album {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.356);
 }
@@ -713,11 +772,28 @@ body {
 .album-img a img {
   width: 300px;
   height: 200px;
+  transition: 0.3s;
+}
+
+.album-img a img:hover {
+  width: 325px;
+  height: 225px;
+}
+
+.album-content {
+  padding: 10px;
 }
 
 .album-content-date {
   display: flex;
   gap: 5px;
+  margin-top: 15px;
+}
+
+.album-content-date p {
+  margin-top: -10px;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 /* FOOTER */
