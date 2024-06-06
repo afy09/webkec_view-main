@@ -40,16 +40,20 @@
               <template #button-content>
                 <em>Daftar Kelurahan</em>
               </template>
-              <b-dropdown-item href="bantarjati">Bantar Jati</b-dropdown-item>
-              <b-dropdown-item href="cibuluh">Cibuluh</b-dropdown-item>
-              <b-dropdown-item href="ciluar">Ciluar</b-dropdown-item>
-              <b-dropdown-item href="cimahpar">Cimahpar</b-dropdown-item>
-              <b-dropdown-item href="ciparigi">Ciparigi</b-dropdown-item>
-              <b-dropdown-item href="kedunghalang"
+              <b-dropdown-item href="kelbantarjati"
+                >Bantar Jati</b-dropdown-item
+              >
+              <b-dropdown-item href="kelcibuluh">Cibuluh</b-dropdown-item>
+              <b-dropdown-item href="kelciluar">Ciluar</b-dropdown-item>
+              <b-dropdown-item href="kelcimahpar">Cimahpar</b-dropdown-item>
+              <b-dropdown-item href="kelciparigi">Ciparigi</b-dropdown-item>
+              <b-dropdown-item href="kelkedunghalang"
                 >Kedunghalang</b-dropdown-item
               >
-              <b-dropdown-item href="tanahbaru">Tanahbaru</b-dropdown-item>
-              <b-dropdown-item href="tegalgundil">Tegalgundil</b-dropdown-item>
+              <b-dropdown-item href="keltanahbaru">Tanahbaru</b-dropdown-item>
+              <b-dropdown-item href="keltegalgundil"
+                >Tegalgundil</b-dropdown-item
+              >
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </b-collapse>
@@ -217,83 +221,192 @@
 
         <!-- posyandu -->
         <b-tab title="Posyandu">
-          <!-- <h3>Pos<span>yandu</span></h3> -->
           <div class="galeri-foto">
-            <!-- coba -->
-            <b-modal id="bv-modal-example" hide-footer>
-              <template #modal-title>
-                Using <code>$bvModal</code> Methods
-              </template>
-              <div class="d-block text-center">
-                <h3>Hello From This Modal!</h3>
-              </div>
-              <b-button
-                class="mt-3"
-                block
-                @click="$bvModal.hide('bv-modal-example')"
-                >Close</b-button
-              >
-            </b-modal>
-
             <div class="album">
               <div class="album-img">
                 <a
                   ><img
-                    src="~assets/img/galeri/surkenfest.png"
+                    src="~assets/img/bantarjati/pos-anggrek-a.png"
                     alt=""
                     id="show-btn"
                     @click="$bvModal.show('bv-modal-example')"
                 /></a>
               </div>
               <div class="album-content">
-                <h5>Surken Fest</h5>
+                <h5>Anggrek A</h5>
               </div>
+              <!-- modal -->
+              <b-modal id="bv-modal-example" hide-footer>
+                <template #modal-title>
+                  <h5>Anggrek A</h5>
+                </template>
+                <div id="modal" class="d-block text-center">
+                  <img src="~assets/img/bantarjati/pos-anggrek-a.png" alt="" />
+                  <p class="text-center">Nama Posyandu : Anggrek A</p>
+                  <p>
+                    Strata : Posyandu Purnama adalah Posyandu yang sudah dapat
+                    melaksanakan kegiatan lebih dari 8 kali per tahun, dengan
+                    rata-rata jumlah kader sebanyak lima orang atau lebih,
+                    cakupan kelima kegiatan utamanya lebih dari 50%, mampu
+                    menyelenggarakan program tambahan, serta telah memperoleh
+                    sumber pembiayaan dari dana sehat yang dikelola oleh
+                    masyarakat yang pesertanya masih terbatas yakni kurang dari
+                    50% KK di wilayah kerja Posyandu.
+                  </p>
+                  <p>
+                    Lokasi : KALIBATA RT 003/003 Kelurahan Bantarjati Kecamatan
+                    Bogor Utara
+                  </p>
+                </div>
+                <b-button
+                  class="mt-3"
+                  block
+                  @click="$bvModal.hide('bv-modal-example')"
+                  >Close</b-button
+                >
+              </b-modal>
+              <!-- modal end -->
             </div>
 
             <div class="album">
               <div class="album-img">
                 <a
                   ><img
-                    src="~assets/img/galeri/surkenfest.png"
+                    src="~assets/img/bantarjati/pos-anggrek-b.png"
                     alt=""
                     id="show-btn"
-                    @click="$bvModal.show('bv-modal-example')"
+                    @click="$bvModal.show('bv-modal-example-2')"
                 /></a>
               </div>
               <div class="album-content">
-                <h5>Surken Fest</h5>
+                <h5>Anggrek B</h5>
               </div>
+              <!-- modal -->
+              <b-modal id="bv-modal-example-2" hide-footer>
+                <template #modal-title>
+                  <h5>Anggrek B</h5>
+                </template>
+                <div id="modal" class="d-block text-center">
+                  <img src="~assets/img/bantarjati/pos-anggrek-b.png" alt="" />
+                  <p class="text-center">Nama Posyandu : Anggrek B</p>
+                  <p>
+                    Strata : Posyandu Purnama adalah Posyandu yang sudah dapat
+                    melaksanakan kegiatan lebih dari 8 kali per tahun, dengan
+                    rata-rata jumlah kader sebanyak lima orang atau lebih,
+                    cakupan kelima kegiatan utamanya lebih dari 50%, mampu
+                    menyelenggarakan program tambahan, serta telah memperoleh
+                    sumber pembiayaan dari dana sehat yang dikelola oleh
+                    masyarakat yang pesertanya masih terbatas yakni kurang dari
+                    50% KK di wilayah kerja Posyandu.
+                  </p>
+                  <p>
+                    Lokasi : KALIBATA RT 003/003 Kelurahan Bantarjati Kecamatan
+                    Bogor Utara
+                  </p>
+                </div>
+                <b-button
+                  class="mt-3"
+                  block
+                  @click="$bvModal.hide('bv-modal-example-2')"
+                  >Close</b-button
+                >
+              </b-modal>
+              <!-- modal end -->
             </div>
 
             <div class="album">
               <div class="album-img">
-                <a href="#"
+                <a
                   ><img
-                    src="~assets/img/galeri/alatdeteks banjir.png"
-                    alt="alat detek banjir"
+                    src="~assets/img/bantarjati/pos-anggrek-merah.png"
+                    alt=""
+                    id="show-btn"
+                    @click="$bvModal.show('bv-modal-example-3')"
                 /></a>
               </div>
               <div class="album-content">
-                <h5>Alat Detek Banjir</h5>
+                <h5>Anggrek Merah</h5>
               </div>
+              <!-- modal -->
+              <b-modal id="bv-modal-example-3" hide-footer>
+                <template #modal-title>
+                  <h5>Anggrek Merah</h5>
+                </template>
+                <div id="modal" class="d-block text-center">
+                  <img
+                    src="~assets/img/bantarjati/pos-anggrek-merah.png"
+                    alt=""
+                  />
+                  <p class="text-center">Nama Posyandu : Anggrek Merah</p>
+                  <p>
+                    Strata : Posyandu Purnama adalah Posyandu yang sudah dapat
+                    melaksanakan kegiatan lebih dari 8 kali per tahun, dengan
+                    rata-rata jumlah kader sebanyak lima orang atau lebih,
+                    cakupan kelima kegiatan utamanya lebih dari 50%, mampu
+                    menyelenggarakan program tambahan, serta telah memperoleh
+                    sumber pembiayaan dari dana sehat yang dikelola oleh
+                    masyarakat yang pesertanya masih terbatas yakni kurang dari
+                    50% KK di wilayah kerja Posyandu.
+                  </p>
+                  <p>
+                    Lokasi : KALIBATA RT 004/011 Kelurahan Bantarjati Kecamatan
+                    Bogor Utara
+                  </p>
+                </div>
+                <b-button
+                  class="mt-3"
+                  block
+                  @click="$bvModal.hide('bv-modal-example-3')"
+                  >Close</b-button
+                >
+              </b-modal>
+              <!-- modal end -->
             </div>
 
             <div class="album">
               <div class="album-img">
-                <a href="#"
+                <a
                   ><img
-                    src="~assets/img/galeri/rapatodfkec.png"
-                    alt="Rapat ODF"
+                    src="~assets/img/bantarjati/pos-asoka.png"
+                    alt=""
+                    id="show-btn"
+                    @click="$bvModal.show('bv-modal-example-4')"
                 /></a>
               </div>
               <div class="album-content">
-                <h5>Rapat ODF</h5>
-                <!-- <div class="album-content-date">
-                  <i class="fa-regular fa-calendar-days fa-sm"></i>
-
-                  <p>17 Mei 2024</p>
-                </div> -->
+                <h5>Asoka</h5>
               </div>
+              <!-- modal -->
+              <b-modal id="bv-modal-example-4" hide-footer>
+                <template #modal-title>
+                  <h5>Asoka</h5>
+                </template>
+                <div id="modal" class="d-block text-center">
+                  <img src="~assets/img/bantarjati/pos-asoka.png" alt="" />
+                  <p class="text-center">Nama Posyandu : Asoka</p>
+                  <p>
+                    Strata : Posyandu Purnama adalah Posyandu yang sudah dapat
+                    melaksanakan kegiatan lebih dari 8 kali per tahun, dengan
+                    rata-rata jumlah kader sebanyak lima orang atau lebih,
+                    cakupan kelima kegiatan utamanya lebih dari 50%, mampu
+                    menyelenggarakan program tambahan, serta telah memperoleh
+                    sumber pembiayaan dari dana sehat yang dikelola oleh
+                    masyarakat yang pesertanya masih terbatas yakni kurang dari
+                    50% KK di wilayah kerja Posyandu.
+                  </p>
+                  <p>
+                    Lokasi : BANTARJATI KAUM RT 006/ 010 Kelurahan Bantarjati
+                    Kecamatan Bogor Utara
+                  </p>
+                </div>
+                <b-button
+                  class="mt-3"
+                  block
+                  @click="$bvModal.hide('bv-modal-example-4')"
+                  >Close</b-button
+                >
+              </b-modal>
+              <!-- modal end -->
             </div>
           </div>
         </b-tab>
@@ -823,8 +936,7 @@ body {
   display: flex;
   gap: 40px;
   justify-content: center;
-  /* flex-wrap: wrap; */
-  margin: 30px;
+  margin: 50px 30px 30px 30px;
 }
 
 .profil-lurah img {
@@ -855,22 +967,12 @@ body {
   margin-top: 3px;
 }
 
-/* GALERI STYLE */
+/* ALL KELURAHAN*/
 .galeri {
   margin: 50px 30px 50px 30px;
   font-weight: 600;
 }
 
-/* .berita title {
-    color: #3375cc;
-  } */
-
-/* .tabs p {
-    padding: 10px 40px 10px 20px;
-    font-weight: 400;
-  } */
-
-/* Galeri Foto */
 .galeri h2 {
   text-align: center;
   font-size: 23px;
@@ -888,23 +990,19 @@ body {
 .galeri h3 {
   text-align: center;
   font-size: 20px;
-  /* font-weight: 600; */
   color: #3375cc;
   margin-top: 30px;
   margin-bottom: 20px;
 }
 
-/* .galeri h3 span {
-  color: black;
-  border-bottom: 2px solid #3375cc;
-} */
+/* POSYANDU STYLE */
 
 .galeri-foto {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .album {
@@ -914,28 +1012,27 @@ body {
 .album-img a img {
   width: 300px;
   height: 200px;
-  transition: 0.3s;
+  cursor: pointer;
+  /* transition: 0.3s; */
 }
 
-.album-img a img:hover {
+/* .album-img a img:hover {
   width: 325px;
   height: 225px;
-}
+} */
 
 .album-content {
   padding: 10px;
 }
 
-.album-content-date {
-  display: flex;
-  gap: 5px;
-  margin-top: 15px;
+#modal p {
+  text-align: start;
 }
 
-.album-content-date p {
-  margin-top: -10px;
-  font-weight: 500;
-  font-size: 14px;
+/* KONTAK STYLE */
+
+.kontak {
+  margin-top: 50px;
 }
 
 .kontak h5 {
@@ -1039,9 +1136,36 @@ body {
     display: none;
   }
 
+  /* PROFIL KEL */
+  .profil {
+    flex-direction: column;
+    margin: 10px 10px 10px 10px;
+  }
+
+  .profil-lurah img {
+    width: 100%;
+  }
+
+  .profil-lurah p {
+    width: 100%;
+  }
+
   /* POSYANDU STYLE */
   .berita {
     width: 100%;
+  }
+
+  .galeri-foto {
+    margin-top: 50px;
+  }
+
+  #modal img {
+    width: 100%;
+  }
+
+  /* KONTAK */
+  .kontak {
+    margin-top: 30px;
   }
 }
 </style>

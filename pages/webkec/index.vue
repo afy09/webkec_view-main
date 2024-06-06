@@ -40,14 +40,20 @@
               <template #button-content>
                 <em>Daftar Kelurahan</em>
               </template>
-              <b-dropdown-item href="#">Bantar Jati</b-dropdown-item>
-              <b-dropdown-item href="#">Cibuluh</b-dropdown-item>
-              <b-dropdown-item href="#">Ciluar</b-dropdown-item>
-              <b-dropdown-item href="#">Cimahpar</b-dropdown-item>
-              <b-dropdown-item href="#">Ciparigi</b-dropdown-item>
-              <b-dropdown-item href="#">Kedunghalang</b-dropdown-item>
-              <b-dropdown-item href="#">Tanahbaru</b-dropdown-item>
-              <b-dropdown-item href="#">Tegalgundil</b-dropdown-item>
+              <b-dropdown-item href="kelbantarjati"
+                >Bantar Jati</b-dropdown-item
+              >
+              <b-dropdown-item href="kelcibuluh">Cibuluh</b-dropdown-item>
+              <b-dropdown-item href="kelciluar">Ciluar</b-dropdown-item>
+              <b-dropdown-item href="kelcimahpar">Cimahpar</b-dropdown-item>
+              <b-dropdown-item href="kelciparigi">Ciparigi</b-dropdown-item>
+              <b-dropdown-item href="kelkedunghalang"
+                >Kedunghalang</b-dropdown-item
+              >
+              <b-dropdown-item href="keltanahbaru">Tanahbaru</b-dropdown-item>
+              <b-dropdown-item href="keltegalgundil"
+                >Tegalgundil</b-dropdown-item
+              >
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </b-collapse>
