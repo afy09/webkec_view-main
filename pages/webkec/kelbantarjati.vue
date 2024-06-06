@@ -40,14 +40,16 @@
               <template #button-content>
                 <em>Daftar Kelurahan</em>
               </template>
-              <b-dropdown-item href="#">Bantar Jati</b-dropdown-item>
-              <b-dropdown-item href="#">Cibuluh</b-dropdown-item>
-              <b-dropdown-item href="#">Ciluar</b-dropdown-item>
-              <b-dropdown-item href="#">Cimahpar</b-dropdown-item>
-              <b-dropdown-item href="#">Ciparigi</b-dropdown-item>
-              <b-dropdown-item href="#">Kedunghalang</b-dropdown-item>
-              <b-dropdown-item href="#">Tanahbaru</b-dropdown-item>
-              <b-dropdown-item href="#">Tegalgundil</b-dropdown-item>
+              <b-dropdown-item href="bantarjati">Bantar Jati</b-dropdown-item>
+              <b-dropdown-item href="cibuluh">Cibuluh</b-dropdown-item>
+              <b-dropdown-item href="ciluar">Ciluar</b-dropdown-item>
+              <b-dropdown-item href="cimahpar">Cimahpar</b-dropdown-item>
+              <b-dropdown-item href="ciparigi">Ciparigi</b-dropdown-item>
+              <b-dropdown-item href="kedunghalang"
+                >Kedunghalang</b-dropdown-item
+              >
+              <b-dropdown-item href="tanahbaru">Tanahbaru</b-dropdown-item>
+              <b-dropdown-item href="tegalgundil">Tegalgundil</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
         </b-collapse>
@@ -142,43 +144,124 @@
     </div>
     <!-- HERO SECTION END-->
 
-    <!-- GALERI START -->
+    <!-- KELURAHAN START -->
 
     <div class="galeri">
+      <h2>KELURAHAN <span>BANTAR JATI</span></h2>
       <b-tabs content-class="mt-3" justified>
-        <!-- Galeri Foto -->
-        <b-tab title="Galeri Foto">
-          <h2>Album <span>Foto</span></h2>
+        <!-- profil -->
+        <b-tab title="Profil">
+          <!-- <h3>Profil<span> Kelurahan</span></h3> -->
+          <div class="profil">
+            <div class="profil-lurah">
+              <img
+                src="~assets/img/bantarjati/lurah-bjati.png"
+                alt="img-lurah"
+              />
+              <p
+                class="nm-lurah"
+                style="text-align: center; font-size: 20px; font-weight: 500"
+              >
+                Nendar Kusnida, S.Sos.
+              </p>
+              <p>
+                Rasa syukur terbesar selalu terhaturkan kepada Allah SWT, karena
+                nikmat kesehatan dan kesempatan dari-Nya, masyarakat Kota Bogor
+                tetap bersemangat menuju hidup sehat. Selamat datang di situs
+                resmi Website Kelurahan Bantar Jati Kota Bogor. Website
+                Kelurahan Bantar Jati ini memuat Profil Kelurahan Bantar Jati
+                dan informasi penting berbagai program dan kegiatan Kelurahan
+                Bantar Jati Kota Bogor, Kami harap website ini dapat bermanfaat
+                dalam memberikan data dan informasi yang dapat digunakan oleh
+                masyarakat.
+              </p>
+            </div>
+
+            <div class="profil-content">
+              <h5>Luas Wilayah :</h5>
+              <p>
+                Luas Wilayah Kelurahan Bantarjati tercatat seluas 170Ha yang
+                terdiri dari 16 RW (RukunWilayah) dan 72 RT (Rukun Tetangga),
+                dengan batas-batas sebagai berikut: Sebelah Utara : Kelurahan
+                Cibuluh Kecamatan Bogor Utara Sebelah Selatan : Kelurahan
+                Babakan dan Sempur Kecamatan Bogor Tengah Sebelah Timur :
+                Kelurahan Tegal Gundil Kecamatan Bogor Utara Sebelah Barat :
+                Kelurahan Tanah Sareal Kecamatan Tanah Sareal
+              </p>
+              <div class="profil-visi">
+                <h5>Visi & Misi</h5>
+                <p>
+                  <span>Visi : </span>"Mewujudkan masyarakat pemukiman yang
+                  sehat dan ramah lingkungan"
+                </p>
+                <p>
+                  <span>Misi : </span>
+                </p>
+                <p class="p-misi">
+                  1. Meningkatkan potensi sunber daya manusia yang sehat dan
+                  berpendidikan
+                </p>
+                <p class="p-misi">2. Menjaga Kelestarian Sumber Daya Alam</p>
+                <p class="p-misi">
+                  3. Meningkatkan kemampuan Ekonomi Keluarga da Masyarakat
+                </p>
+                <p class="p-misi">
+                  4. Meningkatkan Kwalitas Sumber Daya Kelembagaan menuju
+                  Pelayanan Prima
+                </p>
+                <p class="p-misi">5. Melestarikan nilai Agama dan Budaya.</p>
+              </div>
+            </div>
+          </div>
+        </b-tab>
+
+        <!-- posyandu -->
+        <b-tab title="Posyandu">
+          <!-- <h3>Pos<span>yandu</span></h3> -->
           <div class="galeri-foto">
+            <!-- coba -->
+            <b-modal id="bv-modal-example" hide-footer>
+              <template #modal-title>
+                Using <code>$bvModal</code> Methods
+              </template>
+              <div class="d-block text-center">
+                <h3>Hello From This Modal!</h3>
+              </div>
+              <b-button
+                class="mt-3"
+                block
+                @click="$bvModal.hide('bv-modal-example')"
+                >Close</b-button
+              >
+            </b-modal>
+
             <div class="album">
               <div class="album-img">
-                <a href="#"
-                  ><img src="~assets/img/galeri/surkenfest.png" alt=""
+                <a
+                  ><img
+                    src="~assets/img/galeri/surkenfest.png"
+                    alt=""
+                    id="show-btn"
+                    @click="$bvModal.show('bv-modal-example')"
                 /></a>
               </div>
               <div class="album-content">
                 <h5>Surken Fest</h5>
-                <div class="album-content-date">
-                  <i class="fa-regular fa-calendar-days fa-sm"></i>
-
-                  <p>7 Maret 2024</p>
-                </div>
               </div>
             </div>
 
             <div class="album">
               <div class="album-img">
-                <a href="#"
-                  ><img src="~assets/img/galeri/cimahparmenggambar.png" alt=""
+                <a
+                  ><img
+                    src="~assets/img/galeri/surkenfest.png"
+                    alt=""
+                    id="show-btn"
+                    @click="$bvModal.show('bv-modal-example')"
                 /></a>
               </div>
               <div class="album-content">
-                <h5>Cimahpar Menggambar</h5>
-                <div class="album-content-date">
-                  <i class="fa-regular fa-calendar-days fa-sm"></i>
-
-                  <p>12 Maret 2024</p>
-                </div>
+                <h5>Surken Fest</h5>
               </div>
             </div>
 
@@ -192,11 +275,6 @@
               </div>
               <div class="album-content">
                 <h5>Alat Detek Banjir</h5>
-                <div class="album-content-date">
-                  <i class="fa-regular fa-calendar-days fa-sm"></i>
-
-                  <p>21 April 2024</p>
-                </div>
               </div>
             </div>
 
@@ -210,24 +288,36 @@
               </div>
               <div class="album-content">
                 <h5>Rapat ODF</h5>
-                <div class="album-content-date">
+                <!-- <div class="album-content-date">
                   <i class="fa-regular fa-calendar-days fa-sm"></i>
 
                   <p>17 Mei 2024</p>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
         </b-tab>
 
-        <!-- Galeri Vidio -->
-        <b-tab title="Galeri Vidio">
-          <h5 style="text-align: center">Tidak ada vidio</h5>
+        <!-- kontak -->
+        <b-tab title="Kontak">
+          <div class="kontak">
+            <h5>Kontak kami :</h5>
+            <div class="kontak-content">
+              <p>
+                <span>Alamat : </span>Jl. Ceremai Ujung No. 2 Kel. Bantarjati
+                Kec. Bogor Utara
+              </p>
+
+              <p><span>No Telepon : </span> 0251-8320233</p>
+
+              <p><span>Email: </span>kel.bantarjati@kotabogor.go.id</p>
+            </div>
+          </div>
         </b-tab>
       </b-tabs>
     </div>
 
-    <!-- GALERI START END -->
+    <!-- KELURAHAN END -->
 
     <!-- FOOTHER -->
     <footer>
@@ -407,14 +497,14 @@ body {
 }
 
 /* .content-txt h3 {
-        text-transform: uppercase;
-        font-size: 18px;
-        color: black;
-        text-align: left;
-        margin-left: 30px;
-        padding-bottom: 10px;
-        font-weight: bold;
-      } */
+          text-transform: uppercase;
+          font-size: 18px;
+          color: black;
+          text-align: left;
+          margin-left: 30px;
+          padding-bottom: 10px;
+          font-weight: bold;
+        } */
 
 .content-txt p {
   font-weight: normal;
@@ -728,6 +818,43 @@ body {
   }
 }
 
+/* PROFIL KEL */
+.profil {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  margin: 30px;
+}
+
+.profil-lurah img {
+  width: 400px;
+  height: 450px;
+}
+
+.nm-lurah {
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.profil-lurah p {
+  font-weight: 400;
+  width: 400px;
+}
+
+.profil-content p {
+  font-weight: 400;
+}
+
+.profil-visi p span {
+  font-weight: 600;
+}
+
+.p-misi {
+  border-bottom: 1px solid black;
+  margin-top: 3px;
+}
+
 /* GALERI STYLE */
 .galeri {
   margin: 50px 30px 50px 30px;
@@ -735,13 +862,13 @@ body {
 }
 
 /* .berita title {
-  color: #3375cc;
-} */
+    color: #3375cc;
+  } */
 
 /* .tabs p {
-  padding: 10px 40px 10px 20px;
-  font-weight: 400;
-} */
+    padding: 10px 40px 10px 20px;
+    font-weight: 400;
+  } */
 
 /* Galeri Foto */
 .galeri h2 {
@@ -750,13 +877,27 @@ body {
   font-weight: 600;
   color: #3375cc;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .galeri h2 span {
   color: black;
   border-bottom: 2px solid #3375cc;
 }
+
+.galeri h3 {
+  text-align: center;
+  font-size: 20px;
+  /* font-weight: 600; */
+  color: #3375cc;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* .galeri h3 span {
+  color: black;
+  border-bottom: 2px solid #3375cc;
+} */
 
 .galeri-foto {
   display: flex;
@@ -795,6 +936,18 @@ body {
   margin-top: -10px;
   font-weight: 500;
   font-size: 14px;
+}
+
+.kontak h5 {
+  margin-bottom: 15px;
+}
+
+.kontak-content p {
+  font-weight: 400;
+}
+
+.kontak-content p span {
+  font-weight: 600;
 }
 
 /* FOOTER */
@@ -930,7 +1083,7 @@ export default {
   //meta
   head() {
     return {
-      title: "GALERI | Kecamatan Bogor Utara",
+      title: "Kelurahan Bantar Jati | Kecamatan Bogor Utara",
       meta: [
         {
           hid: "og:title",
